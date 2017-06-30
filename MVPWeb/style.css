@@ -1,19 +1,36 @@
+@font-face {
+	font-family: 'Brandon';
+	src: url('fonts/brandon_bld.otf') format('opentype'),
+	     url('fonts/brandon_reg.otf') format('opentype'),
+	     url('fonts/brandon_reg_it.otf') format('opentype');
+	font-weight: normal, bold;
+	font-style: italic;
+}
 
+@font-face {
+	font-family: 'Lulo Clean One';
+	src: url('fonts/yellow_design_studio_lulo_clean_one.otf') format('opentype'),
+		 url('fonts/yellow_design_studio_lulo_clean_one_bold.otf') format('opentype');
+	font-weight: normal, bold;
+}	
+	
 
 
 /*******       BODY STYLES      *******/
-
+	
 body {
-	background-image: url(images/ksutuscscience-377.jpg);
+	background-image: url('images/ksutuscscience-377.jpg');
 	/*background-color: #E85A36;*/
 	background-position: top center;
 	background-repeat: no-repeat;
 	width: 100%;
 	margin: 0;
 	
-	font-family: sans-serif;
+	font-family: 'Brandon', sans-serif;
+	font-weight: normal;
 	font-size: 1em;
 }
+
 
 /*******       BACKGROUND STYLES PER PART      *******/
 nav, section, footer {
@@ -29,6 +46,7 @@ section {
 	background-color: #35343F;
 }
 
+
 /*******       HEADER STYLES      *******/
 header {
 	width: 20%;
@@ -36,17 +54,24 @@ header {
 	padding: 7% 6% 15%;
 }
 
+
+/*******       HEADLINE STYLES      *******/
+h1 {
+	padding: 50px 0 0 0;
+
+	font-family: 'Lulo One Clean', sans-serif;
+	font-weight: bold;
+	font-size: 2em;
+}
+
+
 /*******       NAVIGATION STYLES      *******/
 a {
 	text-decoration: none;
 	font-size: 1em;
 }
 
-/*.main {
-	text-align: right;
-}
-
-:link {
+/*:link {
 	color: #FFF;
 }
 
@@ -62,6 +87,7 @@ a {
 	color: #35343F;
 }*/
 
+
 /*******       LIST STYLES      *******/
 ul {
 	list-style-type: none;
@@ -72,13 +98,37 @@ ul {
 	display: 		 inline-flex;
 }
 
-li {
-	width: 40%;
+.main {
+	text-align: right;
 }
+
+.main ul {
+	width: 45%;
+	margin: 15px 0;
+
+	font-family: 'Lulo Clean One', sans-serif;
+	font-weight: normal;
+	font-size: 0.8em;
+}
+
+.main li {
+	padding: 0;
+	margin: 0 15px;
+}
+
+nav:last-child {
+	padding-right: 0;
+	margin-right: 0;
+}
+
 
 /*******       FOOTER STYLES      *******/
 footer p {
 	display: inline-block;
-	margin: 20px 5px;
+	margin: 15px 5px;
+
+	font-family: "Lulo Clean One", sans-serif;
+	font-weight: normal;
+	font-size: .65em;
 }
 
