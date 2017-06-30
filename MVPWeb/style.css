@@ -104,7 +104,7 @@ ul {
 }
 
 .main ul {
-	width: 45%;
+	width: 50%;
 	margin: 15px 0;
 
 	font-family: 'Lulo Clean One', sans-serif;
@@ -114,10 +114,10 @@ ul {
 
 .main li {
 	padding: 0;
-	margin: 0 15px 0 0;
+	margin: 0 5% 0 0;
 }
 
-nav:last-child {
+nav ul:last-child {
 	padding-right: 0;
 	margin-right: 0;
 }
@@ -133,6 +133,8 @@ nav:last-child {
 
 .icons {
 	width: 40%;
+	margin-right: 0;
+	padding-right: 0;
 }
 
 
