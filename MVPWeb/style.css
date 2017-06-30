@@ -34,7 +34,7 @@ body {
 
 /*******       BACKGROUND STYLES PER PART      *******/
 nav, section, footer {
-	padding-left: 6%;
+	padding: 0 6%;
 	color: #FFF;
 }
 
@@ -57,7 +57,8 @@ header {
 
 /*******       HEADLINE STYLES      *******/
 h1 {
-	padding: 50px 0 0 0;
+	padding: 45px 0 0 0;
+	width: 100%;
 
 	font-family: 'Lulo One Clean', sans-serif;
 	font-weight: bold;
@@ -113,7 +114,7 @@ ul {
 
 .main li {
 	padding: 0;
-	margin: 0 15px;
+	margin: 0 15px 0 0;
 }
 
 nav:last-child {
@@ -122,10 +123,23 @@ nav:last-child {
 }
 
 
+/*******       SECTION STYLES      *******/
+.text {
+	display: inline-block;
+	width: 40%;
+	padding-right: 5%;
+	vertical-align: top;
+}
+
+.icons {
+	width: 40%;
+}
+
+
 /*******       FOOTER STYLES      *******/
 footer p {
 	display: inline-block;
-	margin: 15px 5px;
+	margin: 15px 15px 15px 0;
 
 	font-family: "Lulo Clean One", sans-serif;
 	font-weight: normal;
