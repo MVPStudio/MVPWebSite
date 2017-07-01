@@ -21,10 +21,10 @@
 body {
 	background-image: url('images/ksutuscscience-377.jpg');
 	/*background-color: #E85A36;*/
-	background-position: top center;
+	background-position: cover;
 	background-repeat: no-repeat;
-	width: 100%;
-	margin: 0;
+	width: 1024px;
+	margin: auto;
 	
 	font-family: 'Brandon', sans-serif;
 	font-weight: normal;
@@ -49,16 +49,15 @@ section {
 
 /*******       HEADER STYLES      *******/
 header {
-	width: 20%;
 	height: auto;
-	padding: 7% 6% 15%;
+	padding: 7% 0 15% 6%;
 }
 
 
 /*******       HEADLINE STYLES      *******/
 h1 {
 	padding: 45px 0 0 0;
-	width: 100%;
+	margin: 0;
 
 	font-family: 'Lulo One Clean', sans-serif;
 	font-weight: bold;
@@ -115,11 +114,14 @@ ul {
 .main li {
 	padding: 0;
 	margin: 0 5% 0 0;
+<<<<<<< Updated upstream
 }
 
 nav ul:last-child {
 	padding-right: 0;
 	margin-right: 0;
+=======
+>>>>>>> Stashed changes
 }
 
 
