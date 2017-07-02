@@ -17,10 +17,9 @@
 
 
 /*******       BODY STYLES      *******/
-	
 body {
 	background-image: url('images/ksutuscscience-377.jpg');
-	/*background-color: #E85A36;*/
+	background-color: #CCF;
 	background-position: cover;
 	background-repeat: no-repeat;
 	width: 100%;
@@ -53,7 +52,6 @@ section {
 header {
 	max-width: 1024px;
 	margin: auto;
-	height: auto;
 	padding: 7% 5% 15%;
 }
 
@@ -62,52 +60,44 @@ header {
 a {
 	text-decoration: none;
 	font-size: 1em;
+	text-align: center;
 }
 
-/*:link {
+ul a:link {
 	color: #FFF;
 }
 
-:visited {
+ul a:visited {
 	color: #BFBFBF;
 }
 
-:hover {
+ul a:hover {
 	background-color: #35343F;
 }
 
-:active, :focus {
+ul a:active, :focus {
 	color: #35343F;
-}*/
+}
 
 
 /*******       LIST STYLES      *******/
 ul {
 	list-style-type: none;
 	padding-left: 0;
+	overflow: hidden;
 
 	display: -webkit-inline-flex; 
 	display: 	-moz-inline-flex;
 	display: 		 inline-flex;
 }
 
-/*.main {
-	text-align: right;
-}*/
-
 .main ul {
-	text-align: right;
 	width: 100%;
 	margin: 15px 0;
 
 	font-family: 'Lulo Clean One', sans-serif;
 	font-weight: normal;
 	font-size: 0.8em;
-}
-
-.main li {
-	padding: 0 5% 0 0;
-	/*margin: 0 5% 0 0;*/
 }
 
 
@@ -122,10 +112,6 @@ h1 {
 
 
 /*******       SECTION STYLES      *******/
-.content {
-	/*padding: 0 12%;*/
-}
-
 .text {
 	display: inline-block;
 	max-width: 424px;
@@ -134,16 +120,12 @@ h1 {
 }
 
 .icons {
-	width: 25%;
+	width: 55%;
 	max-width: 600px;
 }
 
 
 /*******       FOOTER STYLES      *******/
-footer {
-	/*padding: 0 12%;*/
-}
-
 footer p {
 	display: inline-block;
 	margin: 15px 15px 15px 0;
@@ -154,8 +136,14 @@ footer p {
 }
 
 .footer-links {
-	text-align: right;
+	margin: 0;
+	font-family: "Lulo Clean One", sans-serif;
+	font-weight: normal;
+	font-size: .65em;
 }
 
+.footer-links li {
+	margin: 15px 15px 15px 0;
+}
 
 
