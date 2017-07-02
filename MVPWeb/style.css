@@ -23,7 +23,7 @@ body {
 	/*background-color: #E85A36;*/
 	background-position: cover;
 	background-repeat: no-repeat;
-	width: 1024px;
+	width: 100%;
 	margin: auto;
 	
 	font-family: 'Brandon', sans-serif;
@@ -34,7 +34,9 @@ body {
 
 /*******       BACKGROUND STYLES PER PART      *******/
 nav, section, footer {
-	padding: 0 6%;
+	max-width: 1024px;
+	margin: auto;
+	padding: 0 5%;
 	color: #FFF;
 }
 
@@ -49,19 +51,10 @@ section {
 
 /*******       HEADER STYLES      *******/
 header {
+	max-width: 1024px;
+	margin: auto;
 	height: auto;
-	padding: 7% 0 15% 6%;
-}
-
-
-/*******       HEADLINE STYLES      *******/
-h1 {
-	padding: 45px 0 0 0;
-	margin: 0;
-
-	font-family: 'Lulo One Clean', sans-serif;
-	font-weight: bold;
-	font-size: 2em;
+	padding: 7% 5% 15%;
 }
 
 
@@ -98,12 +91,13 @@ ul {
 	display: 		 inline-flex;
 }
 
-.main {
+/*.main {
 	text-align: right;
-}
+}*/
 
 .main ul {
-	width: 50%;
+	text-align: right;
+	width: 100%;
 	margin: 15px 0;
 
 	font-family: 'Lulo Clean One', sans-serif;
@@ -112,35 +106,44 @@ ul {
 }
 
 .main li {
-	padding: 0;
-	margin: 0 5% 0 0;
-<<<<<<< Updated upstream
+	padding: 0 5% 0 0;
+	/*margin: 0 5% 0 0;*/
 }
 
-nav ul:last-child {
-	padding-right: 0;
-	margin-right: 0;
-=======
->>>>>>> Stashed changes
+
+/*******       HEADLINE STYLES      *******/
+h1 {
+	padding: 45px 0 0 0;
+	
+	font-family: 'Lulo One Clean', sans-serif;
+	font-weight: bold;
+	font-size: 2em;
 }
 
 
 /*******       SECTION STYLES      *******/
+.content {
+	/*padding: 0 12%;*/
+}
+
 .text {
 	display: inline-block;
-	width: 40%;
-	padding-right: 5%;
+	max-width: 424px;
+	padding: 0 2% 0 0;
 	vertical-align: top;
 }
 
 .icons {
-	width: 40%;
-	margin-right: 0;
-	padding-right: 0;
+	width: 25%;
+	max-width: 600px;
 }
 
 
 /*******       FOOTER STYLES      *******/
+footer {
+	/*padding: 0 12%;*/
+}
+
 footer p {
 	display: inline-block;
 	margin: 15px 15px 15px 0;
@@ -149,4 +152,10 @@ footer p {
 	font-weight: normal;
 	font-size: .65em;
 }
+
+.footer-links {
+	text-align: right;
+}
+
+
 
