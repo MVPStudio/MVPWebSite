@@ -1,30 +1,70 @@
+@font-face {
+	font-family: 'Brandon';
+	src: url('fonts/brandon_bld.otf') format('opentype'),
+	     url('fonts/brandon_reg.otf') format('opentype'),
+	     url('fonts/brandon_reg_it.otf') format('opentype');
+	font-weight: normal, bold;
+	font-style: italic;
+}
 
+@font-face {
+	font-family: 'Lulo Clean One';
+	src: url('fonts/yellow_design_studio_lulo_clean_one.otf') format('opentype'),
+		 url('fonts/yellow_design_studio_lulo_clean_one_bold.otf') format('opentype');
+	font-weight: normal, bold;
+}	
+	
 
 
 /*******       BODY STYLES      *******/
-
+	
 body {
-	background-image: url(images/ksutuscscience-377.jpg);
-	background-color: #E85A36;
+	background-image: url('images/ksutuscscience-377.jpg');
+	/*background-color: #E85A36;*/
 	background-position: top center;
 	background-repeat: no-repeat;
 	width: 100%;
 	margin: 0;
 	
-	font-family: sans-serif;
+	font-family: 'Brandon', sans-serif;
+	font-weight: normal;
 	font-size: 1em;
 }
 
+
 /*******       BACKGROUND STYLES PER PART      *******/
+nav, section, footer {
+	padding: 0 6%;
+	color: #FFF;
+}
+
 nav, footer {
 	background-color: #E85A36;
-	color: #FFF;
 }
 
 section {
 	background-color: #35343F;
-	color: #FFF;
 }
+
+
+/*******       HEADER STYLES      *******/
+header {
+	width: 20%;
+	height: auto;
+	padding: 7% 6% 15%;
+}
+
+
+/*******       HEADLINE STYLES      *******/
+h1 {
+	padding: 45px 0 0 0;
+	width: 100%;
+
+	font-family: 'Lulo One Clean', sans-serif;
+	font-weight: bold;
+	font-size: 2em;
+}
+
 
 /*******       NAVIGATION STYLES      *******/
 a {
@@ -37,21 +77,74 @@ a {
 }
 
 :visited {
-	color: #B3B3B3;
+	color: #BFBFBF;
 }
 
-:hover, :active, :focus {
+:hover {
 	background-color: #35343F;
-	color: #FFF;
+}
+
+:active, :focus {
+	color: #35343F;
 }*/
 
 
 /*******       LIST STYLES      *******/
 ul {
 	list-style-type: none;
+	padding-left: 0;
 
 	display: -webkit-inline-flex; 
 	display: 	-moz-inline-flex;
 	display: 		 inline-flex;
+}
+
+.main {
+	text-align: right;
+}
+
+.main ul {
+	width: 50%;
+	margin: 15px 0;
+
+	font-family: 'Lulo Clean One', sans-serif;
+	font-weight: normal;
+	font-size: 0.8em;
+}
+
+.main li {
+	padding: 0;
+	margin: 0 5% 0 0;
+}
+
+nav ul:last-child {
+	padding-right: 0;
+	margin-right: 0;
+}
+
+
+/*******       SECTION STYLES      *******/
+.text {
+	display: inline-block;
+	width: 40%;
+	padding-right: 5%;
+	vertical-align: top;
+}
+
+.icons {
+	width: 40%;
+	margin-right: 0;
+	padding-right: 0;
+}
+
+
+/*******       FOOTER STYLES      *******/
+footer p {
+	display: inline-block;
+	margin: 15px 15px 15px 0;
+
+	font-family: "Lulo Clean One", sans-serif;
+	font-weight: normal;
+	font-size: .65em;
 }
 
