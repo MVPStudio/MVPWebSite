@@ -35,3 +35,9 @@ jspm_packages
 
 # Optional REPL history
 .node_repl_history
+
+# Visual Studio Code Files
+*.njsproj
+
+# Static pages (should be copied from MVPWeb directory use 'npm run copy')
+MVPNode/MVPNode/public

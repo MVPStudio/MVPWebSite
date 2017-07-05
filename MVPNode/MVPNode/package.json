@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "npm run copy && node ./bin/www",
+    "copy": "node copy.js"
   },
   "description": "MVPNode",
   "author": {
@@ -15,6 +16,7 @@
     "debug": "^2.2.0",
     "express": "^4.14.0",
     "morgan": "^1.7.0",
+    "ncp": "^2.0.0",
     "pug": "^2.0.0-beta6",
     "serve-favicon": "^2.3.0"
   }
