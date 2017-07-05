@@ -13,7 +13,6 @@
 		 url('fonts/yellow_design_studio_lulo_clean_one_bold.otf') format('opentype');
 	font-weight: normal, bold;
 }	
-	
 
 
 /*******       BODY STYLES      *******/
@@ -33,8 +32,6 @@ body {
 
 /*******       BACKGROUND STYLES PER PART      *******/
 nav, section, footer {
-	max-width: 1024px;
-	margin: auto;
 	padding: 0 5%;
 	color: #FFF;
 }
@@ -52,7 +49,11 @@ section {
 header {
 	max-width: 1024px;
 	margin: auto;
-	padding: 7% 5% 15%;
+	padding: 7% 5% 15% 45px;
+}
+
+.logo {
+	width: 35%;
 }
 
 
@@ -60,22 +61,26 @@ header {
 a {
 	text-decoration: none;
 	font-size: 1em;
-	text-align: center;
 }
 
-ul a:link {
+.top-nav a:link, 
+.footer-links a:link {
 	color: #FFF;
 }
 
-ul a:visited {
+.top-nav a:visited, 
+.footer-links a:visited {
 	color: #BFBFBF;
 }
 
-ul a:hover {
+.top-nav a:hover, 
+.footer-links a:hover {
 	background-color: #35343F;
+	padding: 15px 5px;
 }
-
-ul a:active, :focus {
+ 
+.top-nav a:active, a:focus, 
+.footer-links a:active, a:focus {
 	color: #35343F;
 }
 
@@ -84,26 +89,44 @@ ul a:active, :focus {
 ul {
 	list-style-type: none;
 	padding-left: 0;
-	overflow: hidden;
-
-	display: -webkit-inline-flex; 
-	display: 	-moz-inline-flex;
-	display: 		 inline-flex;
 }
 
-.main ul {
-	width: 100%;
-	margin: 15px 0;
+.top-nav > ul {
+	max-width: 1024px;
+	margin: auto;
+	padding: 15px 0;
 
 	font-family: 'Lulo Clean One', sans-serif;
 	font-weight: normal;
 	font-size: 0.8em;
+	text-align: right;
+}
+
+.top-nav li {
+	display: inline-block;
+	padding: 0 10px;
+	margin: 0;
+}
+
+.icons > ul {
+	max-width: 59%;
+	padding-top: 10px;
+	position: relative;
+}
+
+.icons li {
+	display: inline-block;
+	vertical-align: top;
+	width: 120px;
+	padding-left: 2%;
 }
 
 
 /*******       HEADLINE STYLES      *******/
 h1 {
-	padding: 45px 0 0 0;
+	max-width: 1024px;
+	margin: auto;
+	padding: 5px 0 0 0;
 	
 	font-family: 'Lulo One Clean', sans-serif;
 	font-weight: bold;
@@ -112,38 +135,168 @@ h1 {
 
 
 /*******       SECTION STYLES      *******/
-.text {
-	display: inline-block;
-	max-width: 424px;
-	padding: 0 2% 0 0;
-	vertical-align: top;
+section {
+	overflow: hidden;
+	padding: 45px;
 }
 
-.icons {
-	width: 55%;
-	max-width: 600px;
+.content {
+	max-width: 1024px;
+	margin: auto;
+}
+
+.text {
+	float: left;
+	max-width: 41%;
+	padding: 0 3% 0 0;
+	position: relative;
 }
 
 
 /*******       FOOTER STYLES      *******/
-footer p {
+footer {
+	clear: left;
+	padding-left: 45px;
+}
+
+footer ul {
+	max-width: 1024px;
+	margin: auto;
+}
+
+footer li {
 	display: inline-block;
-	margin: 15px 15px 15px 0;
+	margin: 15px 0;
 
 	font-family: "Lulo Clean One", sans-serif;
 	font-weight: normal;
 	font-size: .65em;
+}
+
+.copyright {
+	padding-right: 20px;
 }
 
 .footer-links {
-	margin: 0;
-	font-family: "Lulo Clean One", sans-serif;
-	font-weight: normal;
-	font-size: .65em;
-}
-
-.footer-links li {
-	margin: 15px 15px 15px 0;
+	float: right;
+	padding-left: 20px;
 }
 
 
+/*******************       MEDIA QUERIES      *******************/
+
+/* Screen Resolution: max -768px, min - 600px*/
+@media screen and (max-width: 768px) and (min-width: 600px) {
+	body {
+		background-size: 120%;
+		background-position: top right;
+	}
+
+
+/*******       BACKGROUND STYLES PER PART      *******/
+	nav, section, footer {
+		padding: 0 1%;
+	}
+
+
+/*******       HEADER STYLES      *******/
+	header {
+		padding: 3% 5% 15% 70px;
+	}
+
+	.logo {
+		min-width: 40%;
+	}
+
+
+/*******       LIST STYLES      *******/
+	ul {
+		list-style-type: none;
+		padding-left: 0;
+	}
+
+	.top-nav > ul {
+		max-width: 768px;
+		margin: auto;
+		padding: 15px 0;
+
+		font-family: 'Lulo Clean One', sans-serif;
+		font-weight: normal;
+		font-size: 0.8em;
+		text-align: center;
+	}
+
+	.top-nav > li {
+		display: inline-block;
+		padding: 0 13px;
+		margin: 0;
+	}
+
+	.icons > ul {
+		padding-top: 40px;
+		position: relative;
+	}
+
+	.icons li {
+		display: inline-block;
+		vertical-align: top;
+		width: 120px;
+		padding-right: 2%;
+	}
+
+
+/*******       SECTION STYLES      *******/
+	section {
+		overflow: hidden;
+		padding: 45px 70px;
+	}
+
+	.content {
+		max-width: 768px;
+		margin: auto;
+	}
+
+	.text {
+		max-width: 100%;
+		padding: 0 0 30px 0;
+		position: relative;
+	}
+
+
+/*******       FOOTER STYLES      *******/
+	footer ul {
+		max-width: 768px;
+		margin: auto;
+	}
+
+	.footer-info > li {
+		display: inline-block;
+		text-align: left;
+		margin: 15px 0;
+		padding: 0 3px;
+
+		font-family: "Lulo Clean One", sans-serif;
+		font-weight: normal;
+		font-size: .6em;
+	}
+}
+
+
+/* Screen Resolution: max - 600px, min - 320px */
+@media screen and (max-width: 600px) and (min-width: 320px) {
+	body {
+		background-size: 100%;
+		margin: 0;
+		background-position: top center;
+	}
+
+/*******       HEADER STYLES      *******/
+	header {
+		/*padding: 3% 5% 15% 70px;*/
+	}
+
+	.logo {
+		background-color: #35343F;
+		/*min-width: 40%;*/
+	}
+}
