@@ -41,3 +41,6 @@ jspm_packages
 
 # Static pages (should be copied from MVPWeb directory use 'npm run copy')
 MVPNode/MVPNode/public
+
+# Local Configuration files for SQL access
+MVPNode/MVPNode/sql_config/localconfig.js
