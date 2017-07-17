@@ -18,12 +18,19 @@ try {
 // The connection pool we are using to do database calls
 var pool = null;
 
-var mssqlConnect = function () {};
+var mssqlConnect = function () {
+    this.connect();
+};
 
 /**
- * Connects the object to the database. This function MUST be called before anything else!
+ * Connects the object to the database. This function MUST be called before anything else, and is called
+ * automatically in the constructor
  */
 mssqlConnect.prototype.connect = function (callback) {
+
+    // Make sure we don't have a null callback
+    if (!callback) callback = new function () {};
+
     pool = new mssql.ConnectionPool(config);
     pool.connect(function (err) {
         if (err) {

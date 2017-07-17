@@ -5,7 +5,11 @@ var config = {
     user: "*******************",
     password: "******************",
     server: "mvpstudio.database.windows.net",
-    database: "MVPTest"
+    database: "MVPTest",
+
+    options: {
+        encrypt: true // Use this if you're on Windows Azure 
+    }
 }
 
 module.exports = config;
