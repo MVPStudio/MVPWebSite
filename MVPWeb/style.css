@@ -45,10 +45,15 @@ section {
 }
 
 
+/*******       MAX-WIDTH      *******/
+header, .top-nav > ul, .content, h1 {
+	max-width: 1600px;
+	margin: auto;
+}
+
+
 /*******       HEADER STYLES      *******/
 header {
-	max-width: 1024px;
-	margin: auto;
 	padding: 7% 5% 15% 45px;
 }
 
@@ -63,24 +68,24 @@ a {
 	font-size: 1em;
 }
 
-.top-nav a:link, 
-.footer-links a:link {
+.top-nav a, 
+.terms-privacy a {
+	padding: 15px 5px;
 	color: #FFF;
 }
 
 .top-nav a:visited, 
-.footer-links a:visited {
+.terms-privacy a:visited {
 	color: #BFBFBF;
 }
 
 .top-nav a:hover, 
-.footer-links a:hover {
+.terms-privacy a:hover {
 	background-color: #35343F;
-	padding: 15px 5px;
 }
  
 .top-nav a:active, a:focus, 
-.footer-links a:active, a:focus {
+.terms-privacy a:active, a:focus {
 	color: #35343F;
 }
 
@@ -92,8 +97,6 @@ ul {
 }
 
 .top-nav > ul {
-	max-width: 1024px;
-	margin: auto;
 	padding: 15px 0;
 
 	font-family: 'Lulo Clean One', sans-serif;
@@ -108,8 +111,9 @@ ul {
 	margin: 0;
 }
 
-.icons > ul {
-	max-width: 59%;
+.icons {
+	display: inline-block;
+	width: 56%;
 	padding-top: 10px;
 	position: relative;
 }
@@ -117,15 +121,13 @@ ul {
 .icons li {
 	display: inline-block;
 	vertical-align: top;
-	width: 120px;
+	width: 23%;
 	padding-left: 2%;
 }
 
 
 /*******       HEADLINE STYLES      *******/
 h1 {
-	max-width: 1024px;
-	margin: auto;
 	padding: 5px 0 0 0;
 	
 	font-family: 'Lulo One Clean', sans-serif;
@@ -140,11 +142,6 @@ section {
 	padding: 45px;
 }
 
-.content {
-	max-width: 1024px;
-	margin: auto;
-}
-
 .text {
 	float: left;
 	max-width: 41%;
@@ -156,17 +153,8 @@ section {
 /*******       FOOTER STYLES      *******/
 footer {
 	clear: left;
-	padding-left: 45px;
-}
-
-footer ul {
-	max-width: 1024px;
-	margin: auto;
-}
-
-footer li {
-	display: inline-block;
-	margin: 15px 0;
+	padding-left: 15px 0 15px 45px;
+	overflow: hidden;
 
 	font-family: "Lulo Clean One", sans-serif;
 	font-weight: normal;
@@ -174,12 +162,25 @@ footer li {
 }
 
 .copyright {
-	padding-right: 20px;
+	max-width: 656px;
+	width: 41%;
+	text-align: left;
 }
 
-.footer-links {
-	float: right;
-	padding-left: 20px;
+.copyright p {
+	display: inline-block;
+	padding-right: 10%;
+}
+
+ul.terms-privacy {
+	max-width: 944px;
+	width: 56%;
+	text-align: right;
+}
+
+.terms-privacy li {
+	display: inline-block;
+	padding-left: 10%;
 }
 
 
