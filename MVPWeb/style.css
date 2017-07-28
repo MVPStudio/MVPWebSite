@@ -17,10 +17,11 @@
 
 /*******       BODY STYLES      *******/
 body {
-	background-image: url('images/ksutuscscience-377.jpg');
-	background-color: #CCF;
-	background-position: cover;
+	background-image: url('images/ksutuscscience-377-larger-resolution.jpg');
+	background-size: cover;
 	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-color: #CCF;
 	width: 100%;
 	margin: auto;
 	
@@ -54,11 +55,11 @@ header, .top-nav > ul, .content, h1 {
 
 /*******       HEADER STYLES      *******/
 header {
-	padding: 7% 5% 15% 45px;
+	padding: 7% 5% 15%;
 }
 
 .logo {
-	width: 35%;
+	width: 30%;
 }
 
 
@@ -101,7 +102,7 @@ ul {
 
 	font-family: 'Lulo Clean One', sans-serif;
 	font-weight: normal;
-	font-size: 0.8em;
+	font-size: 0.9em;
 	text-align: right;
 }
 
@@ -121,14 +122,14 @@ ul {
 .icons li {
 	display: inline-block;
 	vertical-align: top;
-	width: 23%;
-	padding-left: 2%;
+	width: 20%;
+	padding-left: 5%;
 }
 
 
 /*******       HEADLINE STYLES      *******/
 h1 {
-	padding: 5px 0 0 0;
+	padding: 10px 0 0 0;
 	
 	font-family: 'Lulo One Clean', sans-serif;
 	font-weight: bold;
@@ -139,21 +140,26 @@ h1 {
 /*******       SECTION STYLES      *******/
 section {
 	overflow: hidden;
-	padding: 45px;
+	padding: 5%;
 }
 
 .text {
 	float: left;
 	max-width: 41%;
-	padding: 0 3% 0 0;
+	padding: 1.5% 3% 0 0;
 	position: relative;
+}
+
+.text p {
+	font-size: 1.25em;
+	margin: 0;
 }
 
 
 /*******       FOOTER STYLES      *******/
 footer {
 	clear: left;
-	padding-left: 15px 0 15px 45px;
+	padding: 0 5%;
 	overflow: hidden;
 
 	font-family: "Lulo Clean One", sans-serif;
@@ -162,8 +168,9 @@ footer {
 }
 
 .copyright {
-	max-width: 656px;
-	width: 41%;
+	max-width: 640px;
+	width: 45%;
+	float: left;
 	text-align: left;
 }
 
@@ -173,8 +180,11 @@ footer {
 }
 
 ul.terms-privacy {
-	max-width: 944px;
-	width: 56%;
+	max-width: 640px;
+	width: 45%;
+	margin: 0;
+	padding: 10px 0;
+	float: right;
 	text-align: right;
 }
 
@@ -184,120 +194,105 @@ ul.terms-privacy {
 }
 
 
+
+
+
+
+
+
+
+
 /*******************       MEDIA QUERIES      *******************/
 
-/* Screen Resolution: max -768px, min - 600px*/
-@media screen and (max-width: 768px) and (min-width: 600px) {
+/* Screen Resolution: max -1071px, min - 777px*/
+@media screen and (max-width: 1071px) and (min-width: 777px) {
+	/*******       BODY STYLES      *******/
 	body {
-		background-size: 120%;
-		background-position: top right;
+		background-image: url('images/ksutuscscience-377-1100px.jpg');
 	}
 
 
-/*******       BACKGROUND STYLES PER PART      *******/
-	nav, section, footer {
-		padding: 0 1%;
-	}
-
-
-/*******       HEADER STYLES      *******/
-	header {
-		padding: 3% 5% 15% 70px;
-	}
-
+	/*******       HEADER STYLES      *******/
 	.logo {
-		min-width: 40%;
+		width: 30vw;
 	}
 
 
-/*******       LIST STYLES      *******/
-	ul {
-		list-style-type: none;
-		padding-left: 0;
-	}
-
+	/*******       LIST STYLES      *******/
 	.top-nav > ul {
-		max-width: 768px;
-		margin: auto;
-		padding: 15px 0;
-
-		font-family: 'Lulo Clean One', sans-serif;
-		font-weight: normal;
 		font-size: 0.8em;
-		text-align: center;
 	}
 
-	.top-nav > li {
+	.top-nav li {
 		display: inline-block;
-		padding: 0 13px;
+		padding: 0 10px;
 		margin: 0;
 	}
 
-	.icons > ul {
-		padding-top: 40px;
+	.icons {
+		display: inline-block;
+		width: 50%;
+		padding-top: 10px;
 		position: relative;
 	}
 
 	.icons li {
 		display: inline-block;
 		vertical-align: top;
-		width: 120px;
-		padding-right: 2%;
+		width: 20%;
+		padding-left: 5%;
 	}
 
 
-/*******       SECTION STYLES      *******/
+	/*******       HEADLINE STYLES      *******/
+	h1 {
+		padding: 10px 0 0 0;
+		
+		font-family: 'Lulo One Clean', sans-serif;
+		font-weight: bold;
+		font-size: 2em;
+	}
+
+
+	/*******       SECTION STYLES      *******/
 	section {
 		overflow: hidden;
-		padding: 45px 70px;
-	}
-
-	.content {
-		max-width: 768px;
-		margin: auto;
+		padding: 5%;
 	}
 
 	.text {
-		max-width: 100%;
-		padding: 0 0 30px 0;
+		float: left;
+		max-width: 50%;
+		padding: 1.5% 0 0 0;
 		position: relative;
 	}
 
-
-/*******       FOOTER STYLES      *******/
-	footer ul {
-		max-width: 768px;
-		margin: auto;
+	.text p {
+		font-size: 1em;
+		margin: 0;
 	}
 
-	.footer-info > li {
-		display: inline-block;
-		text-align: left;
-		margin: 15px 0;
-		padding: 0 3px;
 
-		font-family: "Lulo Clean One", sans-serif;
-		font-weight: normal;
-		font-size: .6em;
+	/*******       FOOTER STYLES      *******/
+	.copyright {
+		width: 40%;
+	}
+
+	.copyright p {
+		padding-right: 10%;
+	}
+
+	.terms-privacy {
+		width: 40%;
+	}
+
+	.terms-privacy li {
+		padding-left: 10%;
 	}
 }
+
 
 
 /* Screen Resolution: max - 600px, min - 320px */
 @media screen and (max-width: 600px) and (min-width: 320px) {
-	body {
-		background-size: 100%;
-		margin: 0;
-		background-position: top center;
-	}
 
-/*******       HEADER STYLES      *******/
-	header {
-		/*padding: 3% 5% 15% 70px;*/
-	}
-
-	.logo {
-		background-color: #35343F;
-		/*min-width: 40%;*/
-	}
-}
