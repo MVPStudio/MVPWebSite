@@ -113,15 +113,17 @@ ul {
 }
 
 .icons {
-	display: inline-block;
-	width: 56%;
-	padding-top: 10px;
+	/*display: inline-block;*/
+	float: right;
+	width: 50%;
+	/*padding-top: 10px;*/
 	position: relative;
 }
 
 .icons li {
 	display: inline-block;
 	vertical-align: top;
+	/*min-width: 100px;*/
 	width: 20%;
 	padding-left: 5%;
 }
@@ -145,13 +147,13 @@ section {
 
 .text {
 	float: left;
-	max-width: 41%;
-	padding: 1.5% 3% 0 0;
+	width: 42%;
+	padding: 1.5% 0 0 0;
 	position: relative;
+	font-size: 1vw;
 }
 
 .text p {
-	font-size: 1.25em;
 	margin: 0;
 }
 
@@ -176,7 +178,7 @@ footer {
 
 .copyright p {
 	display: inline-block;
-	padding-right: 10%;
+	padding-right: 5%;
 }
 
 ul.terms-privacy {
@@ -190,7 +192,7 @@ ul.terms-privacy {
 
 .terms-privacy li {
 	display: inline-block;
-	padding-left: 10%;
+	padding-left: 5%;
 }
 
 
@@ -231,7 +233,8 @@ ul.terms-privacy {
 
 	.icons {
 		display: inline-block;
-		width: 50%;
+		width: 56%;
+		height: auto;
 		padding-top: 10px;
 		position: relative;
 	}
@@ -262,32 +265,24 @@ ul.terms-privacy {
 
 	.text {
 		float: left;
-		max-width: 50%;
-		padding: 1.5% 0 0 0;
+		max-width: 42%;
+		padding: 1.5% 3% 0 0;
 		position: relative;
 	}
 
 	.text p {
-		font-size: 1em;
+		font-size: 1.125em;
 		margin: 0;
 	}
 
 
 	/*******       FOOTER STYLES      *******/
 	.copyright {
-		width: 40%;
-	}
-
-	.copyright p {
-		padding-right: 10%;
+		width: 45%;
 	}
 
 	.terms-privacy {
-		width: 40%;
-	}
-
-	.terms-privacy li {
-		padding-left: 10%;
+		width: 45%;
 	}
 }
 
