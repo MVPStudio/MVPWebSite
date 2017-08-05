@@ -208,7 +208,7 @@ footer {
 	right: 0;
 
 	padding: 0 5%;
-	overflow: hidden;
+	/*overflow: hidden;*/
 
 	font-family: "Lulo Clean One", sans-serif;
 	font-weight: normal;
@@ -255,7 +255,9 @@ ul.terms-privacy {
 	/*******       HEADER STYLES      *******/
 	header { 
 		background-image: url('images/ksutuscscience-377-1100px.jpg');
+		background-size: 100%;
 	}
+
 
 	/*******       SECTION STYLES      *******/
 	.text {
@@ -265,6 +267,7 @@ ul.terms-privacy {
 	.text p {
 		font-size: 2.25vw;
 	}
+
 
 	/*******       LIST STYLES      *******/
 	.icons {
@@ -291,6 +294,118 @@ ul.terms-privacy {
 }
 
 
+
+
+
+
+/* Screen Resolution: max 841px */
+@media screen and (max-width: 841px) {
+	/*******       FOOTER STYLES      *******/
+	.copyright {
+		width: 58%;
+	}
+
+	ul.terms-privacy {
+		width: 40%;
+		margin-left: 0;
+	}
+}
+
+
+
+
+
+
+/* Screen Resolution: max 818px */
+@media screen and (max-width: 818px) {
+	/*******       FOOTER STYLES      *******/
+	.copyright {
+		width: 57%;
+	}
+
+	ul.terms-privacy {
+		width: 41%;
+		margin-left: 0;
+	}
+}
+
+
+
+
+
+/* Screen Resolution: max 798px */
+@media screen and (max-width: 798px) {
+	/*******       FOOTER STYLES      *******/
+	.copyright {
+		width: 56%;
+	}
+
+	ul.terms-privacy {
+		width: 42%;
+		margin-left: 0;
+	}
+}
+
+
+
+
+
+/* Screen Resolution: max 779px */
+@media screen and (max-width: 779px) {
+	/*******       FOOTER STYLES      *******/
+	.copyright {
+		width: 58%;
+		padding: 0;
+	}
+
+	.copyright p {
+		padding: 15px 0;
+		display: block;
+	}
+
+	ul.terms-privacy {
+		width: 41%;
+		padding: 0;
+	}
+
+	.terms-privacy li {
+		padding: 15px 0;
+		display: block;
+	}
+}
+
+
+
+
+
+
+
+/* Screen Resolution: max 714px*/
+@media screen and (max-width: 714px) {
+	/*******       NAVIGATION STYLES      *******/
+	.top-nav a, 
+	.terms-privacy a {
+		padding: 16px 5px;
+	}
+
+
+	/*******       LIST STYLES      *******/
+	.top-nav > ul {
+		padding: 15px 0;
+		text-align: center;
+	}
+
+	.top-nav li {
+		font-size: .9em;
+	}
+}
+
+
+
+
+
+
+
 /* Screen Resolution: max 700px*/
 @media screen and (max-width: 700px) {
 	/*******       BODY STYLES      *******/
@@ -305,25 +420,15 @@ ul.terms-privacy {
 	}
 
 
-	/*******       LIST STYLES      *******/
-	.top-nav > ul {
-		text-align: center;
-	}
-
-	.top-nav li {
-		font-size: .85em;
-		padding: 0 2.50%;
-	}
-
-
 	/*******       SECTION STYLES      *******/
 	.text {
-		width: 60%;
+		width: 100%;
 	}
 
 	.text p {
 		font-size: 1em;
 	}
+
 
 	/*******       LIST STYLES      *******/
 	.icons {
@@ -340,16 +445,101 @@ ul.terms-privacy {
 
 	/*******       FOOTER STYLES      *******/
 	.copyright {
-		width: 51%;
+		width: 60%;
 	}
 
 	ul.terms-privacy {
+		width: 39%;
 		margin-bottom: 0;
-		margin-left: 2%;
 	}
 }
 
 
-/* Screen Resolution: max - 600px, min - 320px */
-@media screen and (max-width: 600px) and (min-width: 320px) {
 
+
+
+
+/* Screen Resolution: max - 643px */
+@media screen and (max-width: 643px) {
+	/*******       LIST STYLES      *******/
+	.top-nav li {
+		font-size: .8em;
+	}
+}
+
+
+
+
+
+
+/* Screen Resolution: max 628px*/
+@media screen and (max-width: 628px) {
+	.text p {
+		font-size: .9em;
+	}
+
+
+	/*******       LIST STYLES      *******/
+	.icons {
+		width: 100%;
+		display: block;
+		padding-bottom: 5%;
+	}
+
+	.icons li {
+		width: 25%;
+		padding: 0 5%;
+	}
+
+
+	/*******       FOOTER STYLES      *******/
+	.copyright {
+		width: 58%;
+	}
+
+	ul.terms-privacy {
+		width: 40%;
+		margin-bottom: 0;
+	}
+}
+
+
+
+
+
+
+
+/* Screen Resolution: max 589px*/
+@media screen and (max-width: 589px) {
+	.text p {
+		font-size: .9em;
+	}
+
+
+	/*******       LIST STYLES      *******/
+	.top-nav li {
+		padding: 0;
+	}
+
+	.icons {
+		width: 100%;
+		display: block;
+		padding-bottom: 5%;
+	}
+
+	.icons li {
+		width: 25%;
+		padding: 0 4%;
+	}
+
+
+	/*******       FOOTER STYLES      *******/
+	.copyright {
+		width: 58%;
+	}
+
+	ul.terms-privacy {
+		width: 40%;
+		margin-bottom: 0;
+	}
+}
