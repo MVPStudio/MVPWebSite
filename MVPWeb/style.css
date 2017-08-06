@@ -62,7 +62,6 @@ ul.terms-privacy,
 	display: inline-block;
 }
 
-.top-nav li,
 .icons,
 .icons li,
 .text {
@@ -137,6 +136,7 @@ ul {
 }
 
 .top-nav > ul {
+	vertical-align: center;
 	padding: 15px 0;
 
 	font-family: 'Lulo Clean One', sans-serif;
@@ -146,6 +146,7 @@ ul {
 }
 
 .top-nav li {
+	vertical-align: center;
 	padding: 0 10px;
 }
 
@@ -385,7 +386,7 @@ ul.terms-privacy {
 	/*******       NAVIGATION STYLES      *******/
 	.top-nav a, 
 	.terms-privacy a {
-		padding: 16px 5px;
+		padding: 15px 5px;
 	}
 
 
@@ -396,7 +397,7 @@ ul.terms-privacy {
 	}
 
 	.top-nav li {
-		font-size: .9em;
+		font-size: 0.9em;
 	}
 }
 
@@ -439,7 +440,7 @@ ul.terms-privacy {
 
 	.icons li {
 		width: 25%;
-		padding: 0 5%;
+		padding: 0 3%;
 	}
 
 
@@ -463,7 +464,7 @@ ul.terms-privacy {
 @media screen and (max-width: 643px) {
 	/*******       LIST STYLES      *******/
 	.top-nav li {
-		font-size: .8em;
+		font-size: .85em;
 	}
 }
 
@@ -474,21 +475,9 @@ ul.terms-privacy {
 
 /* Screen Resolution: max 628px*/
 @media screen and (max-width: 628px) {
+	/*******       SECTION STYLES      *******/	
 	.text p {
-		font-size: .9em;
-	}
-
-
-	/*******       LIST STYLES      *******/
-	.icons {
-		width: 100%;
-		display: block;
-		padding-bottom: 5%;
-	}
-
-	.icons li {
-		width: 25%;
-		padding: 0 5%;
+		font-size: .95em;
 	}
 
 
@@ -508,38 +497,59 @@ ul.terms-privacy {
 
 
 
+/* Screen Resolution: max 616px*/
+@media screen and (max-width: 616px) {
+	/*******       LIST STYLES      *******/
+	.top-nav li {
+		padding: 0 5px;
+	}
+}
 
-/* Screen Resolution: max 589px*/
+
+
+
+
+
+/* Screen Resolution: max 589px */
 @media screen and (max-width: 589px) {
 	.text p {
 		font-size: .9em;
 	}
+}
 
 
+
+
+
+/* Screen Resolution: max 580px */
+@media screen and (max-width: 580px) {
 	/*******       LIST STYLES      *******/
 	.top-nav li {
-		padding: 0;
+		padding: 0 4px;
 	}
+}
 
-	.icons {
-		width: 100%;
-		display: block;
-		padding-bottom: 5%;
+
+
+
+
+
+/* Screen Resolution: max 562px */
+@media screen and (max-width: 562px) {
+	/*******       LIST STYLES      *******/
+	.top-nav li {
+		padding: 0 3px;
 	}
-
-	.icons li {
-		width: 25%;
-		padding: 0 4%;
-	}
+}
 
 
-	/*******       FOOTER STYLES      *******/
-	.copyright {
-		width: 58%;
-	}
 
-	ul.terms-privacy {
-		width: 40%;
-		margin-bottom: 0;
+
+
+
+/* Screen Resolution: max 554px */
+@media screen and (max-width: 554px) {
+	body {
+		padding-top: 25%;
 	}
 }
