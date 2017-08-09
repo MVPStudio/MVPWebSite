@@ -159,7 +159,7 @@ ul {
 	width: 58%;
 	padding-top: 2%;
 
-	background-color: #0fc;
+	/*background-color: #0fc;*/
 }
 
 .icons li {
@@ -167,7 +167,7 @@ ul {
 	padding-left: 7%;
 	margin: 0;
 
-	background-color: #66f;
+	/*background-color: #66f;*/
 }
 
 .icons li img {
@@ -593,6 +593,8 @@ ul.terms-privacy {
 
 	.top-nav-hoverable-menu {
 		display: inline-block;
+		width: 63%;
+		text-align: right;
 	}
 
 	.dropbtn {
@@ -629,6 +631,10 @@ ul.terms-privacy {
 		background-color: #e85a36;
 		display: inline-block;
 		padding: 15px 5px;*/
+	}
+
+	.dropdown:hover .dropbtn {
+		
 	}
 
 	.dropdown:hover .dropdown-content {
