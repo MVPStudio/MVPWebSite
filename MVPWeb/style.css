@@ -593,6 +593,7 @@ ul.terms-privacy {
 
 	.top-nav-hoverable-menu {
 		display: inline-block;
+		box-sizing: border-box;
 		width: 63%;
 		text-align: right;
 	}
@@ -614,31 +615,89 @@ ul.terms-privacy {
 
 	.dropdown-content {
 		display: none;
-		background-color: #ed7b5e;
+		background-color: #35343f;
 		position: absolute;
 		z-index: 1;
 		right: 0;
 
 		text-align: right;
+		font-size: .8em;
+		font-weight: bold;
 	}
 
-	.dropdown-content a {
-		display: inline-block;
-		color: #35343f;
+	.dropdown-content ul {
+		/*margin: 0 25px;*/
+		padding: 0 25px;
 	}
 
-	.dropdown:hover {/*
-		background-color: #e85a36;
-		display: inline-block;
-		padding: 15px 5px;*/
-	}
-
-	.dropdown:hover .dropbtn {
-		
+	.dropdown-content li {
+		/*width: 100%;*/
 	}
 
 	.dropdown:hover .dropdown-content {
 		display: block;
+	}
+
+	.dropdown-content a {
+		display: inline-block;
+		color: #fff;
+	}
+
+	.dropdown-content a:link {
+		padding: 10px 25px;
+		width: 80%;
+	}
+
+	.dropdown-content a:visited {
+		color: #c8c7d1;
+	}
+
+	.dropdown-content a:hover {
+		color: #e85a36;
+		padding: 10px 25px;
+	}
+
+	h1 {
+		font-size: 6vw;
+	}
+
+	.icons li {
+		width: 50%;
+		padding: 5% 8%;
+	}
+
+}
+
+@media screen and (max-width: 396px) {
+	/*******       LIST STYLES      *******/
+	.terms-privacy a:hover {
+		background-color: transparent;
+	}
+
+
+	/*******       FOOTER STYLES      *******/
+	footer {
+		position: relative;
+	}
+	
+	.copyright,  ul.terms-privacy {
+		display: block;
+		width: 100%;
+	}
+
+	.copyright {
+		padding-top: 10px;
+	}
+
+	.copyright p {
+		text-align: center;
+		padding: 15px 0;
+	}
+
+	.terms-privacy li {
+		width: 100%;
+		text-align: center;
+		padding: 15px 0;
 	}
 }
 
