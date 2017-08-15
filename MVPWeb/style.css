@@ -14,6 +14,9 @@
 	font-weight: normal, bold;
 }	
 
+/***************	 DESKTOP STYLES     *************/
+/* MAX-WIDTH SET: 1600px */
+
 
 /*******       BODY STYLES      *******/
 body {
@@ -140,6 +143,10 @@ ul {
 	padding-left: 0;
 }
 
+#menu {
+	display: none;
+}
+
 .top-nav > ul {
 	vertical-align: center;
 	padding: 15px 0;
@@ -256,8 +263,12 @@ ul.terms-privacy {
 
 
 /*******************       MEDIA QUERIES      *******************/
-/* Screen Resolution: max 950px */
-@media screen and (max-width: 950px) {
+
+/***************	 TABLET STYLES     *************/
+/* MAX-WIDTH SET: 1024px */
+
+/* Screen Resolution: max 1024px */
+@media screen and (max-width: 1024px) {
 	/*******       HEADER STYLES      *******/
 	header { 
 		background-image: url('images/ksutuscscience-377-1100px.jpg');
@@ -316,8 +327,6 @@ ul.terms-privacy {
 		margin-left: 0;
 	}
 }
-
-
 
 
 
@@ -464,11 +473,12 @@ ul.terms-privacy {
 
 
 
-/* Screen Resolution: max - 643px */
-@media screen and (max-width: 643px) {
+/* Screen Resolution: max - 660px */
+@media screen and (max-width: 660px) {
 	/*******       LIST STYLES      *******/
 	.top-nav li {
 		font-size: .85em;
+		padding: 0 1%;
 	}
 }
 
@@ -500,20 +510,6 @@ ul.terms-privacy {
 
 
 
-
-/* Screen Resolution: max 616px*/
-@media screen and (max-width: 616px) {
-	/*******       LIST STYLES      *******/
-	.top-nav li {
-		padding: 0 5px;
-	}
-}
-
-
-
-
-
-
 /* Screen Resolution: max 589px */
 @media screen and (max-width: 589px) {
 	.text p {
@@ -530,7 +526,7 @@ ul.terms-privacy {
 @media screen and (max-width: 580px) {
 	/*******       LIST STYLES      *******/
 	.top-nav li {
-		padding: 0 4px;
+		padding: 0 0.75%;
 	}
 }
 
@@ -543,7 +539,7 @@ ul.terms-privacy {
 @media screen and (max-width: 562px) {
 	/*******       LIST STYLES      *******/
 	.top-nav li {
-		padding: 0 3px;
+		padding: 0 0.5%;
 	}
 }
 
@@ -552,8 +548,8 @@ ul.terms-privacy {
 
 
 
-/* Screen Resolution: max 554px */
-@media screen and (max-width: 554px) {
+/* Screen Resolution: max 480px */
+@media screen and (max-width: 480px) {
 	/*******       BACKGROUND STYLES      *******/
 	nav {
 		background-color: transparent;
@@ -587,16 +583,27 @@ ul.terms-privacy {
 
 
 	/*******       LIST STYLES      *******/
-	.top-nav-normal-menu {
+	.top-nav-normal-menu, 	.btn-hamburger-js-slideout-toggle {
 		display: none;
 	}
+
+	#menu {
+		width: 63%;
+		padding: 0;
+		display: inline-block;
+		text-align: right;
+
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}/*
 
 	.top-nav-hoverable-menu {
 		display: inline-block;
 		box-sizing: border-box;
 		width: 63%;
 		text-align: right;
-	}
+	}*/
 
 	.dropbtn {
 		color: #fff;
@@ -668,6 +675,10 @@ ul.terms-privacy {
 
 }
 
+
+
+
+
 @media screen and (max-width: 396px) {
 	/*******       LIST STYLES      *******/
 	.terms-privacy a:hover {
@@ -679,7 +690,7 @@ ul.terms-privacy {
 	footer {
 		position: relative;
 	}
-	
+
 	.copyright,  ul.terms-privacy {
 		display: block;
 		width: 100%;
