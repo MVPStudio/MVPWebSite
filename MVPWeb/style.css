@@ -46,8 +46,6 @@ section,
 .icons, 
 .team,
 .icons li,
-.icons-participating,
-.icons-participating li,
 .team li,
 .copyright,
 .copyright p, 
@@ -63,6 +61,7 @@ ul.terms-privacy,
 .team,
 .icons li,
 .team li,
+.text-participating,
 .icons-participating,
 .icons-participating li,
 .text, 
@@ -179,7 +178,11 @@ ul {
 }
 
 .icons-participating {
-	width: 58%;
+	width: 40%;
+	padding-top: 4%;
+	vertical-align: top;
+
+	/*background-color: #0fc;*/
 }
 
 .icons li,
@@ -250,7 +253,7 @@ section {
 }
 
 .text-participating {
-	width: 50%;
+	width: 55%;
 	margin-right: 4%;
 	padding: 3% 0;
 	font-size: 1.25em;
