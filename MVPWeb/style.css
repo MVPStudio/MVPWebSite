@@ -44,7 +44,11 @@ footer {
 section,
 .content,
 .icons, 
+.team,
 .icons li,
+.icons-participating,
+.icons-participating li,
+.team li,
 .copyright,
 .copyright p, 
 ul.terms-privacy,
@@ -56,7 +60,11 @@ ul.terms-privacy,
 
 .top-nav li,
 .icons,
-.icons li, 
+.team,
+.icons li,
+.team li,
+.icons-participating,
+.icons-participating li,
 .text, 
 .copyright,
 .copyright p, 
@@ -162,24 +170,53 @@ ul {
 	padding: 0 10px;
 }
 
-.icons {
+.icons,
+.team {
 	width: 58%;
 	padding-top: 2%;
 
 	/*background-color: #0fc;*/
 }
 
-.icons li {
+.icons-participating {
+	width: 58%;
+}
+
+.icons li,
+.team li,
+.icons-participating li {
 	width: 25%;
-	padding-left: 7%;
+	padding-left: 6%;
 	margin: 0;
 
 	/*background-color: #66f;*/
 }
 
-.icons li img {
+.icons li img,
+.team-member li img {
 	width: 100%;
 	height: auto;
+}
+
+.team-member li {
+	display: block;
+	width: 100%;
+	text-align: center;
+	padding-bottom: 5px;
+}
+
+.title, 
+.name {
+	font-family: 'Brandon', sans-serif;
+	font-weight: normal;
+}
+
+.title {
+	font-size: 1em;
+}
+
+.name {
+	font-size: 1.6em;
 }
 
 
@@ -210,6 +247,13 @@ section {
 
 .text p {
 	margin: 0;
+}
+
+.text-participating {
+	width: 50%;
+	margin-right: 4%;
+	padding: 3% 0;
+	font-size: 1.25em;
 }
 
 
