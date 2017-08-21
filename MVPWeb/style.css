@@ -45,11 +45,12 @@ section,
 .content,
 .steps,
 .steps li,
-.steps,
 .icons, 
 .team,
 .icons li,
 .team li,
+.mvp-projects,
+.project,
 .copyright,
 .copyright p, 
 ul.terms-privacy,
@@ -66,10 +67,13 @@ ul.terms-privacy,
 .team,
 .icons li,
 .team li,
+.mvp-projects,
+.mvp-projects li,
+.project,
+.text, 
 .text-participating,
 .icons-participating,
 .icons-participating li,
-.text, 
 .copyright,
 .copyright p, 
 ul.terms-privacy,
@@ -121,7 +125,8 @@ a {
 }
 
 .top-nav a, 
-.terms-privacy a {
+.terms-privacy a,
+.mvp-projects a {
 	padding: 15px 5px;
 	color: #fff;
 }
@@ -148,7 +153,7 @@ a:focus {
 	display: none;
 }
 
-/******     HOW IT WORKS PAGE STYLES:HOVER;    ******/
+/******     HOW IT WORKS PAGE STYLES:HOVER FOR EFFECTS;    ******/
 .gear-0:hover,
 .gear-2:hover {
 	background-image: url('images/single-gear-orange.svg');
@@ -183,7 +188,7 @@ ul {
 }
 
 .top-nav > ul {
-	vertical-align: center;
+	vertical-align: middle;
 	padding: 15px 0;
 
 	font-family: 'Lulo Clean One', sans-serif;
@@ -193,12 +198,12 @@ ul {
 }
 
 .top-nav li {
-	vertical-align: center;
+	vertical-align: middle;
 	padding: 0 10px;
 }
 
 /******     HOME PAGE ICONS (INTERNS, DEVELOPERS, SPONSORS, CLIENTS), 
-                     WHO WE ARE, AND SHOWCASE PAGE STYLES)               ******/
+                     WHO WE ARE, AND SHOWCASE PAGE LIST STYLES)               ******/
 
 .icons,
 .team {
@@ -253,8 +258,7 @@ ul {
 	font-size: 1.6em;
 }
 
-
-/******     HOW IT WORKS PAGE STYLES    ******/
+/******     HOW IT WORKS PAGE LIST STYLES    ******/
 .steps {
 	width: 100%;
 	margin: 0;
@@ -347,6 +351,31 @@ ul {
 	transform: translate(-25%, -22%);
 }
 
+/******     SHOWCASE PAGE LIST STYLES    ******/
+.mvp-projects {
+	width: 100%;
+	vertical-align: middle;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
+
+.mvp-projects li {
+	padding: 3% 5%;
+}
+
+.project li {
+	width: 100%;
+	display: block;
+}
+
+.project-name {
+	font-family: 'Brandon', sans-serif;
+	font-weight: normal;
+	font-size: 1.6em;
+}
+
+
 
 /*******       HEADLINE STYLES      *******/
 h1 {
@@ -357,7 +386,7 @@ h1 {
 	font-size: 2em;
 }
 
-.works {
+.heading-centered {
 	width: 100%;
 	text-align: center;
 }
