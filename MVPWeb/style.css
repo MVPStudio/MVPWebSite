@@ -43,6 +43,9 @@ footer {
 
 section,
 .content,
+.steps,
+.steps li,
+.steps,
 .icons, 
 .team,
 .icons li,
@@ -57,6 +60,8 @@ ul.terms-privacy,
 }
 
 .top-nav li,
+.steps,
+.steps li,
 .icons,
 .team,
 .icons li,
@@ -143,6 +148,29 @@ a:focus {
 	display: none;
 }
 
+/******     HOW IT WORKS PAGE STYLES:HOVER;    ******/
+.gear-0:hover,
+.gear-2:hover {
+	background-image: url('images/single-gear-orange.svg');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.gear-1:hover,
+.gear-4:hover,
+.gear-5:hover {
+	background-image: url('images/single-gear-rot-cw-orange.svg');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.gear-3:hover {
+	background-image: url('images/single-gear-rot-ccw-orange.svg');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+
 
 /*******       LIST STYLES      *******/
 ul {
@@ -168,6 +196,9 @@ ul {
 	vertical-align: center;
 	padding: 0 10px;
 }
+
+/******     HOME PAGE ICONS (INTERNS, DEVELOPERS, SPONSORS, CLIENTS), 
+                     WHO WE ARE, AND SHOWCASE PAGE STYLES)               ******/
 
 .icons,
 .team {
@@ -208,18 +239,112 @@ ul {
 	padding-bottom: 5px;
 }
 
-.title, 
-.name {
+.team-member-title, 
+.team-member-name {
 	font-family: 'Brandon', sans-serif;
 	font-weight: normal;
 }
 
-.title {
+.team-member-title {
 	font-size: 1em;
 }
 
-.name {
+.team-member-name {
 	font-size: 1.6em;
+}
+
+
+/******     HOW IT WORKS PAGE STYLES    ******/
+.steps {
+	width: 100%;
+	margin: 0;
+	font-size: 1.125em;
+	text-align: center;
+
+	/*background-color: #66f;*/
+}
+
+.steps li {
+	line-height: 25px;
+	border-radius: 50%;
+	vertical-align: middle;
+
+	/*background-color: #099;*/
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.gear-0 {
+	width: 250px;
+	height: 250px;
+	padding: 100px 30px 0.5%;
+	font-size: 1.5em;
+
+	background-image: url('images/single-gear.svg');
+
+	webkit-transform: translate(40%, 40%);
+	moz-transform: translate(40%, 40%);
+	transform: translate(40%, 40%);
+}
+
+.gear-1 {
+	width: 175px;
+	height: 175px;
+	padding: 60px 30px 0.5%;
+
+	background-image: url('images/single-gear-rot-cw.svg');
+
+	webkit-transform: translate(40%, 0);
+	moz-transform: translate(40%, 0);
+	transform: translate(40%, 0);
+}
+
+.gear-2 {
+	width: 200px;
+	height: 200px;
+	padding: 75px 40px 0.5%;
+
+	background-image: url('images/single-gear.svg');
+
+	webkit-transform: translate(12%, 58%);
+	moz-transform: translate(12%, 58%);
+	transform: translate(12%, 58%);
+}
+
+.gear-3 {
+	width: 185px;
+	height: 185px;
+	padding: 50px 40px 0.5%;
+
+	background-image: url('images/single-gear-rot-ccw.svg');
+
+	webkit-transform: translate(-11%, -5%);
+	moz-transform: translate(-11%, -5%);
+	transform: translate(-11%, -5%);
+}
+
+.gear-4 {
+	width: 200px;
+	height: 200px;
+	padding: 55px 40px 0.5%;
+
+	background-image: url('images/single-gear-rot-cw.svg');
+
+	webkit-transform: translate(-13%, 15%);
+	moz-transform: translate(-13%, 15%);
+	transform: translate(-13%, 15%);
+}
+
+.gear-5 {
+	width: 175px;
+	height: 175px;
+	padding: 50px 25px 0.5%;
+
+	background-image: url('images/single-gear-rot-cw.svg');
+
+	webkit-transform: translate(-25%, -22%);
+	moz-transform: translate(-25%, -22%);
+	transform: translate(-25%, -22%);
 }
 
 
@@ -230,6 +355,11 @@ h1 {
 	font-family: 'Lulo One Clean', sans-serif;
 	font-weight: bold;
 	font-size: 2em;
+}
+
+.works {
+	width: 100%;
+	text-align: center;
 }
 
 
@@ -257,6 +387,10 @@ section {
 	margin-right: 4%;
 	padding: 3% 0;
 	font-size: 1.25em;
+}
+
+.steps {
+	padding: 3% 0 10%;
 }
 
 
