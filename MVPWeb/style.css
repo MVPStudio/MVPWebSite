@@ -155,26 +155,34 @@ a:focus {
 
 /******     HOW IT WORKS PAGE STYLES:HOVER FOR EFFECTS;    ******/
 .gear-0:hover,
-.gear-2:hover {
-	background-image: url('images/single-gear-orange.svg');
+.gear-1:hover,
+.gear-2:hover,
+.gear-3:hover,
+.gear-4:hover,
+.gear-5:hover {
 	background-repeat: no-repeat;
 	background-position: center;
+}
+
+.gear-0:hover,
+.gear-2:hover {
+	background-image: url('images/single-gear-orange.svg');
 }
 
 .gear-1:hover,
 .gear-4:hover,
 .gear-5:hover {
 	background-image: url('images/single-gear-rot-cw-orange.svg');
-	background-repeat: no-repeat;
-	background-position: center;
 }
 
 .gear-3:hover {
 	background-image: url('images/single-gear-rot-ccw-orange.svg');
-	background-repeat: no-repeat;
-	background-position: center;
 }
 
+/******     SHOWCASE PAGE STYLES:HOVER FOR EFFECTS;    ******/
+.project-name:hover {
+	color: #e85a36;
+}
 
 
 /*******       LIST STYLES      *******/
@@ -286,8 +294,6 @@ ul {
 
 	background-image: url('images/single-gear.svg');
 
-	webkit-transform: translate(40%, 40%);
-	moz-transform: translate(40%, 40%);
 	transform: translate(40%, 40%);
 }
 
@@ -298,8 +304,6 @@ ul {
 
 	background-image: url('images/single-gear-rot-cw.svg');
 
-	webkit-transform: translate(40%, 0);
-	moz-transform: translate(40%, 0);
 	transform: translate(40%, 0);
 }
 
@@ -310,8 +314,6 @@ ul {
 
 	background-image: url('images/single-gear.svg');
 
-	webkit-transform: translate(12%, 58%);
-	moz-transform: translate(12%, 58%);
 	transform: translate(12%, 58%);
 }
 
@@ -322,8 +324,6 @@ ul {
 
 	background-image: url('images/single-gear-rot-ccw.svg');
 
-	webkit-transform: translate(-11%, -5%);
-	moz-transform: translate(-11%, -5%);
 	transform: translate(-11%, -5%);
 }
 
@@ -334,8 +334,6 @@ ul {
 
 	background-image: url('images/single-gear-rot-cw.svg');
 
-	webkit-transform: translate(-13%, 15%);
-	moz-transform: translate(-13%, 15%);
 	transform: translate(-13%, 15%);
 }
 
@@ -346,8 +344,6 @@ ul {
 
 	background-image: url('images/single-gear-rot-cw.svg');
 
-	webkit-transform: translate(-25%, -22%);
-	moz-transform: translate(-25%, -22%);
 	transform: translate(-25%, -22%);
 }
 
@@ -412,7 +408,7 @@ section {
 }
 
 .text-participating {
-	width: 55%;
+	width: 45%;
 	margin-right: 4%;
 	padding: 3% 0;
 	font-size: 1.25em;
