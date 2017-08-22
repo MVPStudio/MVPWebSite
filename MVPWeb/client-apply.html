@@ -54,23 +54,82 @@
 					</li>
 				</ul>
 
-				<div class="intern-form">
+				<div class="client-form">
 					<form action="" method="post">
 						<fieldset>
-							<p>HEY, MY NAME IS 
-								<input type="text" name="name" id="form-name-client" placeholder="YOUR NAME" maxlength="75"> 
-								AND I HAVE AN IDEA FOR A PROJECT THAT I CALL 
-								<input type="text" name="project-name" id="form-project-name" placeholder="PROJECT NAME" maxlength="100">
+							<ul>
+								<li><label>name<br>
+									<input type="text" name="name" id="form-name" maxlength="100" required></label></li>
+								<li><label>email<br>
+									<input type="email" name="email" id="form-email" maxlength="100" required></label></li>
+							</ul>
+						</fieldset>
+
+						<fieldset>	
+							<p>project name<br>
+								<input type="text" name="project-name" class="form-project-name" maxlength="100">
+							</p>
+							
+							<p>project type<br>
+								<select>
+										<option>website</option>
+										<option>software development</option>
+										<option>app</option>
+								</select>
 							</p>
 
-							<p>MY IDEA WOULD
-								<textarea name="idea-description" id="form-project-description" placeholder="PLEASE BRIEFLY DESCRIBE YOUR IDEA IN 140 WORDS OR LESS" rows="3" cols="140"></textarea>. 
-								I am affiliated with these shareholder organizations 
-								<textarea name="shareholder-organizations" id="form-project-shareholders" placeholder="SHAREHOLDER ORGANIZATIONS" rows="3" cols="100"></textarea>
-								, these community partners 
-								<textarea name="community-partners" id="form-project-partners" placeholder="COMMUNITY PARTNERS" rows="3" cols="100"></textarea>
-								, and/or these industy partners 
-								<textarea name="industry-partners" id="form-project-industry" placeholder="INDUSTRY PARTNERS" rows="3" cols="100"></textarea>.
+							<p>project description<br>
+								<textarea name="project-description" id="form-project-description-client" placeholder="please tell us about your project in 140 words or less" rows="3" cols="30"></textarea>
+							</p>
+
+							<p id="form-budget">project budget<br>
+								$
+								<input type="text" name="budget" class="form-budget-client" maxlength="8"> 
+								and $
+								<input type="text" name="budget" class="form-budget-client" maxlength="8">
+							</p>
+
+							<p>i can dedicate 
+									<select>
+										<option>5-10</option>
+										<option>10-15</option>
+										<option>15-20</option>
+										<option>20-25</option>
+										<option>25-30</option>
+										<option>30-35</option> 
+										<option>35-40</option>
+									</select> 
+								hour/hours per week
+							</P>
+
+							<p>if you have website, we would love to see it!<br> 
+								<input type="url" name="website-link" id="form-website-client">
+							</p>
+
+							<p>if you have a demo, please show us!<br> 
+								<input type="url" name="demo-link" id="form-demo-client">
+							</p>
+						</fieldset>
+							
+						<fieldset>
+							<p>existing team<br>
+								<textarea name="existing-team" id="form-team-client" placeholder="please list any current members of your team, separated by a comma" rows="3" cols="30"></textarea>
+							</p>
+
+							<P>stakeholder organizations<br> 
+								<textarea name="shareholder-organizations" id="form-stakeholders-client" placeholder="please list stakeholder organizations you work with, separated with a comma" rows="3" cols="30"></textarea>
+							</p>
+
+							<p>community partners<br> 
+								<textarea name="community-partners" id="form-community-client" placeholder="please list community partners you work with, separated with a comma" rows="3" cols="30"></textarea>
+							</p>
+
+							<p>industry partners<br> 
+								<textarea name="industry-partners" id="form-industry-client" placeholder="please list industry partners you work with, separated by a comma" rows="3" cols="30"></textarea>
+							</p>
+
+							<p>existing sponsors<br>
+								<textarea name="existing-sponsors" id="form-sponsors-client" placeholder="please list any current sponsors working with you, separated by a comma" rows="3" cols="30"></textarea>
 							</p>
 						</fieldset>
 					</form>
