@@ -58,22 +58,22 @@
 					<form action="" method="post">
 						<fieldset>
 							<ul>
-								<li><label>name<br>
-									<input type="text" name="name" id="formName" maxlength="100" required></label>
+								<li><label for="name">name<br>
+									<input type="text" name="name" id="name" maxlength="100" required></label>
 								</li>
-								<li><label>email<br>
-									<input type="email" name="name" id="formEmail" maxlength="100" required></label>
+								<li><label for="email">email<br>
+									<input type="email" name="email" id="email" maxlength="100" required></label>
 								</li>
 							</ul>
 						</fieldset>
 
 						<fieldset>
 							<ul>
-								<li><label>school<br>
-									<input type="text" name="school" id="formSchool" maxlength="100"></label>
+								<li><label for="school">school<br>
+									<input type="text" name="school" id="school" maxlength="100"></label>
 								</li>
 								<li><label>major<br>
-									<input type="text" name="major" id="formMajor" maxlength="100"></label>
+									<input type="text" name="major" id="major" maxlength="100"></label>
 								</li>
 							</ul>
 
@@ -96,26 +96,45 @@
 
 						<fieldset>	
 							<ul>	
-								<li>your skill category<br>
+								<li>your skill sets<br>
 									<ul>
-										<li><input type="checkbox" name="skill-category" value="designer">designer</li>
-										<li><input type="checkbox" name="skill-category" value="developer">developer</li>
+										<li><input type="checkbox" name="skill" value="designer">designer</li>
+										<li><input type="checkbox" name="skill" value="developer">developer</li>
 										<!-- I AM TRYING TO CREATE A SUB MENU THAT ALSO ALLOWS MULTIPLE SELECTIONS MAYBE AS AN "IF THIS IS CLICKED, THIS MENU APPEARS". THIS MIGHT BE A JAVASCRIPT THING-AND I DON'T KNOW IT. -->
 										<li><input type="checkbox" name="skill-category" value="agile pm">agile pm</li>
 									</ul>
 								</li>
-
-								<li>your days available<br>
-									<ul id="availability">
-										<li><input type="checkbox" name="day" value="S">S</li>
-										<li><input type="checkbox" name="day" value="M">M</li>
-										<li><input type="checkbox" name="day" value="Tu">Tu</li>
-										<li><input type="checkbox" name="day" value="W">W</li>
-										<li><input type="checkbox" name="day" value="Th">Th</li>
-										<li><input type="checkbox" name="day" value="F">F</li>
-										<li><input type="checkbox" name="day" value="S">S</li>
+								<li>if you chose developer, please select the skills that apply to you<br>
+									<ul id="developerSkills">
+										<li><input type="checkbox" name="developerSkills" value="front end">front end</li>
+										<li><input type="checkbox" name="developerSkills" value="back end">back end</li>
+										<li><input type="checkbox" name="developerSkills" value="webs">webs</li>
+										<li><input type="checkbox" name="developerSkills" value="apps">apps</li>
 									</ul>
 								</li>
+							</ul>
+
+							<p>i can dedicate 
+								<select>
+									<option>5-10</option>
+									<option>10-15</option>
+									<option>15-20</option>
+									<option>20-25</option>
+									<option>25-30</option>
+									<option>30-35</option> 
+									<option>35-40</option>
+								</select> 
+								hour/hours per week between these days
+							</p>
+							
+							<ul id="availability">
+								<li><input type="checkbox" name="day" value="S">S</li>
+								<li><input type="checkbox" name="day" value="M">M</li>
+								<li><input type="checkbox" name="day" value="Tu">Tu</li>
+								<li><input type="checkbox" name="day" value="W">W</li>
+								<li><input type="checkbox" name="day" value="Th">Th</li>
+								<li><input type="checkbox" name="day" value="F">F</li>
+								<li><input type="checkbox" name="day" value="S">S</li>
 							</ul>
 						</fieldset>
 
