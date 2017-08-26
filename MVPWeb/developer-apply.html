@@ -5,7 +5,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Intern Application</title>
+	<title>Developer Application</title>
 	<link rel="stylesheet" href="style.css">
 </head>
 
@@ -41,24 +41,24 @@
 		</nav>
 
 		<section>
-			<h1>INTERN ONBOARDING</h1>
+			<h1>DEVELOPER ONBOARDING</h1>
 
 			<div class="content">
 				<div class="text-participating">
-					<p>MVP Studio is all about connecting people with tech ideas with people who can help make those ideas a reality. Teamwork is where all the action is, so we desire to be a means of connections and provisions. As an intern, you will work with the pros to develop your understanding of how tech works. You will also be called upon to provide your thoughts and insights as we work together to make projects a reality.</p>
+					<p>MVP Studio is all about connecting people with tech ideas with people who can help make those ideas a reality. Teamwork is where all the action is, so we desire to be a means of connections and provisions. As a developer coming onboard, you will be a major go-to for being able to assist interns and help take projects to the those crucial next levels! We look forward to welcoming you aboard and working with you to build awesome projects!</p>
 				</div>
 
-				<ul class="icons-participating"> <!-- THIS IS THE SAME FOR EACH PAGE. DOES THIS HAVE TO BE GENERATED THROUGH A JAVASCRIPT FUNCTION TO SUCCESSFULLY REPORT THAT THE APPLICATION WAS SUBMITTED CORRECTLY? HOW WILL THAT CONNECT TO THE LINK? CAN I CONNECT THE SUBMIT FUNCTIONALITY TO THE IMAGE? -->
+				<ul class="icons-participating"> <!-- LOOK FOR NOTES IN THE INTER APPLICATION FORM -->
 					<li>
 						<a href="thanks.html"><img src="images/send.svg" alt="send"></a>
 					</li>
 				</ul>
 
-				<div class="intern-form"> <!-- WAITING FOR THE ACTION FILE -->
+				<div class="developer-form"> <!-- LOOK FOR NOTES IN THE INTER APPLICATION FORM -->
 					<form action="" method="post">
 						<fieldset>
 							<ul>
-								<li><label for="name">name<br> <!-- IS THERE ANY SPECIAL ID NEEDED FOR EACH TYPE OF APPLICATION TO DIFFERENTIATE BETWEEN THEM? -->
+								<li><label for="name">name<br> <!-- LOOK FOR NOTES IN THE INTER APPLICATION FORM -->
 									<input type="text" name="name" id="name" maxlength="100" required></label>
 								</li>
 								<li><label for="email">email<br>
@@ -67,44 +67,17 @@
 							</ul>
 						</fieldset>
 
-						<fieldset>
-							<ul>
-								<li><label for="school">school<br>
-									<input type="text" name="school" id="school" maxlength="100"></label>
-								</li>
-								<li><label>major<br>
-									<input type="text" name="major" id="major" maxlength="100"></label>
-								</li>
-							</ul>
-
-							<p>please let us know which term and year you are planning on completing your internship</p>
-
-							<p>term<br> <!-- SHOULD THIS BE A SELECT ONE ONLY OR MULITPLE TERMS? -->
-								<select>
-									<option>fall</option>
-									<option>winter</option>
-									<option>spring</option>
-									<option>summer</option>
-								</select>
-							</p>
-
-							<p>year<br>
-								<input type="number" name="year" id="formYear" placeholder="yyyy" maxlength="4">
-							</p>
-						</fieldset>
-
-
-						<fieldset>	
+						<fieldset>	<!-- NOTE: THIS IS THE SAME SECTION AS THE INTERN FORM -->
 							<ul>	
 								<li>your skill sets<br>
 									<ul>
 										<li><input type="checkbox" name="skill" value="designer">designer</li>
 										<li><input type="checkbox" name="skill" value="developer">developer</li>
-										<!-- THIS TIES INTO NOTE BELOW. I AM LOOKING INTO IMPLEMENTING JAVASCRIPT TO GET THE LIST WORK PROPERLY-->
+										<!-- LOOK FOR NOTES IN THE INTER APPLICATION FORM -->
 										<li><input type="checkbox" name="skill-category" value="agile pm">agile pm</li>
 									</ul>
 								</li>
-								<li>if you chose developer, please select the skills that apply to you<br> <!-- THIS NEEDS ATTENTION: TECHNICALLY, THIS GOES WITHIN THE TOP LIST. I HAVE BEEN LOOKING INTO JAVASCRIPT AS A MEANS TO ACCOMPLISH THIS SUCCESSFULLY. ALSO, THE DEVELOPER-APPLICATIN SHARES THIS SAME LIST -->
+								<li>if you chose developer, please select the skills that apply to you<br> <!-- LOOK FOR NOTES IN THE INTER APPLICATION FORM -->
 									<ul id="developerSkills">
 										<li><input type="checkbox" name="developerSkills" value="front end">front end</li>
 										<li><input type="checkbox" name="developerSkills" value="back end">back end</li>
@@ -114,7 +87,7 @@
 								</li>
 							</ul>
 
-							<p>i can dedicate 
+							<p>i can dedicate  
 								<select>
 									<option>5-10</option>
 									<option>10-15</option>
@@ -139,11 +112,17 @@
 						</fieldset>
 
 						<fieldset>
-							<p>looking for a Capstone project?</p>
-							<ul>
-								<li><input type="radio" name="capstone" value="yes">yes!</li>
-								<li><input type="radio" name="capstone" value="no">no, thank you!</li>
-							</ul>
+							<p>interest in projects?</p> <!-- WHAT IF THE INTERESTED DEVELOPERS DID NOT LOOK AT THE SHOWCASING PROJECTS? WOULD IT BE OKAY TO CHANGE THIS FORMAT TO ENABLE A PREVIEW SCREEN TO COME UP OVER THE CONTENT, PROVIDING A SNIPPET INTO THE PROJECT? IF THEY ARE INTERESTED IN FINDING OUT MORE, MAYBE THERE COULD BE A LINK TO TAKE THEM TO THAT PROJECT'S PAGE. THIS ALSO APPLIES TO THE SPONSOR'S APPLICATION, WHICH PROVIDES A SIMILAR SITUATION -->
+							<select name="projects" size="5" multiple>
+								<option>project name</option>
+								<option>project name</option>
+								<option>project name</option>
+								<option>project name</option>
+								<option>project name</option>
+								<option>project name</option>
+								<option>project name</option>
+								<option>project name</option>
+							</select>
 						</fieldset>
 					</form>
 				</div>
