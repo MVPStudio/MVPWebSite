@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Client Application</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body id="page-wrapper">
+	<header>
+		<a href="index.html"><img src="images/mvp-logo-white.svg" alt="MVP logo white" class="logo"></a>
+
+		<!--  This menu appears at a max of 554px -->
+		<nav id="menu">
+			<div class="dropdown">
+				<button class="dropbtn">MENU</button>
+				<button class="btn-hamburger-js-slideout-toggle"></button> 
+				<div class="dropdown-content">
+					<ul>
+						<li><a href="index.html">HOME</a></li>
+						<li><a href="us.html">WHO WE ARE</a></li>
+						<li><a href="how.html">HOW IT WORKS</a></li>
+						<li><a href="showcase.html">SHOWCASE</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<div id="page-content">
+		<nav class="top-nav">
+			<ul class="top-nav-normal-menu">
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="us.html">WHO WE ARE</a></li>
+				<li><a href="how.html">HOW IT WORKS</a></li>
+				<li><a href="showcase.html">SHOWCASE</a></li>
+			</ul>
+		</nav>
+
+		<section>
+			<h1>CLIENT ONBOARDING</h1>
+
+			<div class="content">
+				<div class="text-participating">
+					<p>MVP Studio is all about connecting people with tech ideas with people who can help make those ideas a reality. Teamwork is where all the action is, so we desire to be a means of connections and provisions. Interns work with developers in the tech field to learn coding and software development. Our developers are experienced and up-to-date with the technology trends, therefore they would provide key insights into your ideas to start making awesome things happen.</p>
+				</div>
+
+				<ul class="icons-participating"> <!-- NOTE: THIS IS THE SAME SECTION AS THE INTERN FORM -->
+					<li>
+						<a href="thanks.html"><img src="images/send.svg" alt="send"></a>
+					</li>
+				</ul>
+
+				<div class="client-form">
+					<form action="/form-api/v/1/t/client" method="POST" id="form">
+						<fieldset>
+							<ul>
+								<li><label>name<br> <!-- NOTE: THIS IS THE SAME SECTION AS THE INTERN FORM -->
+									<input type="text" name="name" id="form-name" maxlength="100" required></label></li>
+								<li><label>email<br>
+									<input type="email" name="email" id="form-email" maxlength="100" required></label></li>
+							</ul>
+						</fieldset>
+
+						<fieldset>	
+							<p>project name<br>
+								<input type="text" name="project-name" class="form-project-name" maxlength="100">
+							</p>
+							
+							<p>project type<br>
+								<select name="project-type" form="form">
+										<option>website</option>
+										<option>software development</option>
+										<option>app</option>
+								</select>
+							</p>
+
+							<p>project description<br>
+								<textarea name="project-description" id="form-project-description-client" placeholder="please tell us about your project in 140 words or less" rows="3" cols="30"></textarea>
+							</p>
+
+							<p id="form-budget">project budget<br>
+								$
+								<input type="text" name="budget" class="form-budget-client" maxlength="8"> 
+								and $
+								<input type="text" name="budget" class="form-budget-client" maxlength="8">
+							</p>
+
+							<p>i can dedicate <!-- THIS IS THE SAME IN SEVERAL OF THE FORMS. DOES IT NEED TO BE DIFFERENTIATED? -->
+									<select name="time-dedication" form="form">
+										<option>5-10</option>
+										<option>10-15</option>
+										<option>15-20</option>
+										<option>20-25</option>
+										<option>25-30</option>
+										<option>30-35</option> 
+										<option>35-40</option>
+									</select> 
+								hour/hours per week
+							</P>
+
+							<p>if you have website, we would love to see it!<br> 
+								<input type="url" name="website-link" id="form-website-client">
+							</p>
+
+							<p>if you have a demo, please show us!<br> 
+								<input type="url" name="demo-link" id="form-demo-client">
+							</p>
+						</fieldset>
+							
+						<fieldset>
+							<p>existing team<br>
+								<textarea name="existing-team" id="form-team-client" placeholder="please list any current members of your team, separated by a comma" rows="3" cols="30"></textarea>
+							</p>
+
+							<P>stakeholder organizations<br>
+								<textarea name="shareholder-organizations" id="form-stakeholders-client" placeholder="please list stakeholder organizations you work with, separated with a comma" rows="3" cols="30"></textarea>
+							</p>
+
+							<p>community partners<br> 
+								<textarea name="community-partners" id="form-community-client" placeholder="please list community partners you work with, separated with a comma" rows="3" cols="30"></textarea>
+							</p>
+
+							<p>industry partners<br> 
+								<textarea name="industry-partners" id="form-industry-client" placeholder="please list industry partners you work with, separated by a comma" rows="3" cols="30"></textarea>
+							</p>
+
+							<p>existing sponsors<br>
+								<textarea name="existing-sponsors" id="form-sponsors-client" placeholder="please list any current sponsors working with you, separated by a comma" rows="3" cols="30"></textarea>
+							</p>
+						</fieldset>
+						<input type="submit" value="submit">
+					</form>
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<div class="copyright">
+				<p>&copy; 2017 MVP STUDIO.</p> 
+				<p>ALL RIGHTS RESERVED.</p>
+			</div>
+
+			<ul class="terms-privacy">
+				<li>
+					<a href="terms.html">TERMS OF USE</a>
+				</li><li>
+					<a href="privacy.html">PRIVACY POLICY</a>
+				</li>
+			</ul>
+		</footer>
+	</div>
+</body>
+</html>
