@@ -5,20 +5,28 @@ var mssqlConnect = require("../utils/mssql_connect.js");
 var previousResult;
 
 describe('dbConnect', function () {
+    describe('Utilities', function() {
+        describe('mssql_connect', function() {
+            it('should be able to correctly generate MSSQL INSERT query', function() {
+                var testDictionary = {
+                    test1: "test1",
+                    test2: "test2",
+                    test3: ["test3a", "test3b"],
+                    "test4": "test4"
+                }
+                var testTable = "testing"
+
+                assert.equal("INSERT INTO testing (test1, test2, test3, test4) VALUES ('test1', 'test2', 'test3a,test3b', 'test4');",
+                              mssqlConnect.insertDictionary(testTable, testDictionary));
+            });
+        })
+    });
 
     describe('Queries', function () {
 
         it('should be able to make a "SELECT * FROM test" request without errors', function(done) {
 
             mssqlConnect.query("SELECT * FROM test", function(res, err) {
-                previousResult = res;
-                done(err);
-            });
-        });
-
-        it('should be able to make a selectAll query using the built in function', function(done) {
-
-            mssqlConnect.selectAll("test", function (res, err) {
                 previousResult = res;
                 done(err);
             });
@@ -77,6 +85,7 @@ describe('dbConnect', function () {
         });
 
         it('should NOT be able to inject SQL', function(done) {
+            this.timeout(10000);
             var injectionValue = "';INSERT INTO test (email, name, constrained) VALUES ('test0', 'test0', 'apps');'"
             mssqlConnect.query("INSERT INTO test (email, name, constrained) VALUES ('" + injectionValue + "', 'test', 'apps')", function(res, err){
                 // This should fail, if it doens't fail the test immedietly

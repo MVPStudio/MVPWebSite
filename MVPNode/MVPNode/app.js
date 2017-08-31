@@ -8,8 +8,7 @@ var bodyParser = require('body-parser');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
-
-var mssql = require("./utils/mssql_connect.js");
+var formApi = require("./routes/form-api");
 
 var app = express();
 
@@ -29,25 +28,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 //app.use('/', routes);
 //app.use('/users', users);
 
-app.post("/form-api/v1/test", function (req, res) {
-    console.log(req.body)
-
-    const httpResponse = res;
-
-    // Try to make a test request using the infromation provided
-    mssql.query("INSERT INTO test (name, email, constrained) VALUES ('" + req.body.name + "', '" + req.body.email + "', '" + req.body.constrained + "')", function(res, err) {
-        // If there was no error, we saved the data!
-        if (!err) {
-            httpResponse.render("form-success-test", {
-               info: "Your form was saved successfully!" 
-            });
-        } else {
-            httpResponse.render("form-success-test", {
-               info: "Your form faled to save, please try again" 
-            });
-        }
-    });
-});
+// Route for form submittal
+app.use('/form-api', formApi);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
