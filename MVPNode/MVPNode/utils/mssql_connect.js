@@ -81,15 +81,18 @@ MSSQLConnect.prototype.insertDictionary = function(tableName, dictionary, cb) {
 
     // Generate the keys section of the query along side the values section
     for (var i=0; i < keys.length; i++) {
-        qString += keys[i] + (i == keys.length - 1 ? ") " : ", ");
+        qString += "[" + keys[i] + "]" + (i == keys.length - 1 ? ") " : ", ");
         vString += "'" + dictionary[keys[i]].toString() + "'" + (i == keys.length - 1 ? ");" : ", ");
     }
 
     // Combine the strings
     qString += vString;
-
+    //console.log(qString);
+    
     // Make the query!
     this.query(qString, cb);
+
+    // Return the query string for debugging
     return(qString);
 }
 
