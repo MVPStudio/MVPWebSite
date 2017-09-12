@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Intern Application</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body id="page-wrapper">
+	<header>
+		<a href="index.html"><img src="images/mvp-logo-white.svg" alt="MVP logo white" class="logo"></a>
+
+		<!--  This menu appears at a max of 554px -->
+		<nav id="menu">
+			<div class="dropdown">
+				<button class="dropbtn">MENU</button>
+				<button class="btn-hamburger-js-slideout-toggle"></button> 
+				<div class="dropdown-content">
+					<ul>
+						<li><a href="index.html">HOME</a></li>
+						<li><a href="us.html">WHO WE ARE</a></li>
+						<li><a href="how.html">HOW IT WORKS</a></li>
+						<li><a href="showcase.html">SHOWCASE</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<div id="page-content">
+		<nav class="top-nav">
+			<ul class="top-nav-normal-menu">
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="us.html">WHO WE ARE</a></li>
+				<li><a href="how.html">HOW IT WORKS</a></li>
+				<li><a href="showcase.html">SHOWCASE</a></li>
+			</ul>
+		</nav>
+
+		<section>
+			<h1>INTERN ONBOARDING</h1>
+
+			<div class="content">
+				<div class="text-participating">
+					<p>MVP Studio is all about connecting people with tech ideas with people who can help make those ideas a reality. Teamwork is where all the action is, so we desire to be a means of connections and provisions. As an intern, you will work with the pros to develop your understanding of how tech works. You will also be called upon to provide your thoughts and insights as we work together to make projects a reality.</p>
+				</div>
+
+				<ul class="icons-participating"> <!-- THIS IS THE SAME FOR EACH PAGE. DOES THIS HAVE TO BE GENERATED THROUGH A JAVASCRIPT FUNCTION TO SUCCESSFULLY REPORT THAT THE APPLICATION WAS SUBMITTED CORRECTLY? HOW WILL THAT CONNECT TO THE LINK? CAN I CONNECT THE SUBMIT FUNCTIONALITY TO THE IMAGE? -->
+					<li>
+						<a href="thanks.html"><img src="images/send.svg" alt="send"></a>
+					</li>
+				</ul>
+
+				<div class="intern-form"> <!-- WAITING FOR THE ACTION FILE -->
+					<form action="/form-api/v/1/t/intern" method="post" id="form">
+						<fieldset>
+							<ul>
+								<li><label for="name">name<br> <!-- IS THERE ANY SPECIAL ID NEEDED FOR EACH TYPE OF APPLICATION TO DIFFERENTIATE BETWEEN THEM? -->
+									<input type="text" name="name" id="name" maxlength="100" required></label>
+								</li>
+								<li><label for="email">email<br>
+									<input type="email" name="email" id="email" maxlength="100" required></label>
+								</li>
+							</ul>
+						</fieldset>
+
+						<fieldset>
+							<ul>
+								<li><label for="school">school<br>
+									<input type="text" name="school" id="school" maxlength="100"></label>
+								</li>
+								<li><label>major<br>
+									<input type="text" name="major" id="major" maxlength="100"></label>
+								</li>
+							</ul>
+
+							<p>please let us know which term and year you are planning on completing your internship</p>
+
+							<p>term<br> <!-- SHOULD THIS BE A SELECT ONE ONLY OR MULITPLE TERMS? -->
+								<select name="term" form="form">
+									<option>fall</option>
+									<option>winter</option>
+									<option>spring</option>
+									<option>summer</option>
+								</select>
+							</p>
+
+							<p>year<br>
+								<input type="number" name="year" id="formYear" placeholder="yyyy" maxlength="4">
+							</p>
+						</fieldset>
+
+
+						<fieldset>	
+							<ul>	
+								<li>your skill sets<br>
+									<ul id="skill-category">
+										<li><input type="checkbox" name="skill-category" value="designer">designer</li>
+										<li><input type="checkbox" name="skill-category" value="developer">developer</li>
+										<!-- THIS TIES INTO NOTE BELOW. I AM LOOKING INTO IMPLEMENTING JAVASCRIPT TO GET THE LIST WORK PROPERLY-->
+										<li><input type="checkbox" name="skill-category" value="agile pm">agile pm</li>
+									</ul>
+								</li>
+								<li>if you chose developer, please select the skills that apply to you<br> <!-- THIS NEEDS ATTENTION: TECHNICALLY, THIS GOES WITHIN THE TOP LIST. I HAVE BEEN LOOKING INTO JAVASCRIPT AS A MEANS TO ACCOMPLISH THIS SUCCESSFULLY. ALSO, THE DEVELOPER-APPLICATIN SHARES THIS SAME LIST -->
+									<ul id="developer-skills">
+										<li><input type="checkbox" name="developer-skills" value="front end">front end</li>
+										<li><input type="checkbox" name="developer-skills" value="back end">back end</li>
+										<li><input type="checkbox" name="developer-skills" value="webs">webs</li>
+										<li><input type="checkbox" name="developer-skills" value="apps">apps</li>
+									</ul>
+								</li>
+							</ul>
+
+							<p>i can dedicate 
+								<select name="time-dedication" form="form">
+									<option>5-10</option>
+									<option>10-15</option>
+									<option>15-20</option>
+									<option>20-25</option>
+									<option>25-30</option>
+									<option>30-35</option> 
+									<option>35-40</option>
+								</select> 
+								hour/hours per week between these days
+							</p>
+							
+							<ul id="availability">
+								<li><input type="checkbox" name="day" value="S">S</li>
+								<li><input type="checkbox" name="day" value="M">M</li>
+								<li><input type="checkbox" name="day" value="Tu">Tu</li>
+								<li><input type="checkbox" name="day" value="W">W</li>
+								<li><input type="checkbox" name="day" value="Th">Th</li>
+								<li><input type="checkbox" name="day" value="F">F</li>
+								<li><input type="checkbox" name="day" value="S">S</li>
+							</ul>
+						</fieldset>
+
+						<fieldset>
+							<p>looking for a Capstone project?</p>
+							<ul>
+								<li><input type="radio" name="capstone" value="yes">yes!</li>
+								<li><input type="radio" name="capstone" value="no">no, thank you!</li>
+							</ul>
+						</fieldset>
+						<input type="submit" value="submit">
+					</form>
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<div class="copyright">
+				<p>&copy; 2017 MVP STUDIO.</p> 
+				<p>ALL RIGHTS RESERVED.</p>
+			</div>
+
+			<ul class="terms-privacy">
+				<li>
+					<a href="terms.html">TERMS OF USE</a>
+				</li><li>
+					<a href="privacy.html">PRIVACY POLICY</a>
+				</li>
+			</ul>
+		</footer>
+	</div>
+</body>
+</html>
