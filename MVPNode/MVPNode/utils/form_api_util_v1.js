@@ -23,7 +23,7 @@ FormApi.prototype.saveForm = function (req, res) {
                 info: "Your form was saved successfully!" 
             });
         } else {
-            //console.log(err);
+            console.log(err);
             httpResponse.render("form-success-test", {
                 info: "Your form faled to save, please try again" 
             });
