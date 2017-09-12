@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Developer Application</title>
 	<link rel="stylesheet" href="style.css">
+	<script src="form-checkbox.js"></script>
 </head>
 
 <body id="page-wrapper">
@@ -54,11 +55,11 @@
 					</li>
 				</ul>
 
-				<div class="developer-form"> <!-- LOOK FOR NOTES IN THE INTER APPLICATION FORM -->
-					<form action="" method="post">
+				<div class="developer-form"> 
+					<form action="/form-api/v/1/t/client" method="post" id="form">
 						<fieldset>
 							<ul>
-								<li><label for="name">name<br> <!-- LOOK FOR NOTES IN THE INTER APPLICATION FORM -->
+								<li><label for="name">name<br> 
 									<input type="text" name="name" id="name" maxlength="100" required></label>
 								</li>
 								<li><label for="email">email<br>
@@ -67,22 +68,20 @@
 							</ul>
 						</fieldset>
 
-						<fieldset>	<!-- NOTE: THIS IS THE SAME SECTION AS THE INTERN FORM -->
+						<fieldset>
 							<ul>	
 								<li>your skill sets<br>
 									<ul>
-										<li><input type="checkbox" name="skill" value="designer">designer</li>
-										<li><input type="checkbox" name="skill" value="developer">developer</li>
-										<!-- LOOK FOR NOTES IN THE INTER APPLICATION FORM -->
-										<li><input type="checkbox" name="skill-category" value="agile pm">agile pm</li>
-									</ul>
-								</li>
-								<li>if you chose developer, please select the skills that apply to you<br> <!-- LOOK FOR NOTES IN THE INTER APPLICATION FORM -->
-									<ul id="developerSkills">
-										<li><input type="checkbox" name="developerSkills" value="front end">front end</li>
-										<li><input type="checkbox" name="developerSkills" value="back end">back end</li>
-										<li><input type="checkbox" name="developerSkills" value="webs">webs</li>
-										<li><input type="checkbox" name="developerSkills" value="apps">apps</li>
+										<li class="choice"><label><input type="checkbox" name="skill" value="designer">designer</label></li>
+										<li class="choice"><label><input type="checkbox" name="skill" value="developer">developer</label>
+											<ul class="sub-choices">
+												<li><label><input type="checkbox" name="skillDeveloper" value="front end">front end</label></li>
+												<li><label><input type="checkbox" name="skillDeveloper" value="back end">back end</label></li>
+												<li><label><input type="checkbox" name="skillDeveloper" value="webs">webs</label></li>
+												<li><label><input type="checkbox" name="skillDeveloper" value="apps">apps</label></li>
+											</ul>
+										</li>
+										<li class="choice"><label><input type="checkbox" name="skill" value="agile pm">agile pm</label></li>
 									</ul>
 								</li>
 							</ul>
@@ -109,20 +108,6 @@
 								<li><input type="checkbox" name="day" value="F">F</li>
 								<li><input type="checkbox" name="day" value="S">S</li>
 							</ul>
-						</fieldset>
-
-						<fieldset>
-							<p>interest in projects?</p> <!-- WHAT IF THE INTERESTED DEVELOPERS DID NOT LOOK AT THE SHOWCASING PROJECTS? WOULD IT BE OKAY TO CHANGE THIS FORMAT TO ENABLE A PREVIEW SCREEN TO COME UP OVER THE CONTENT, PROVIDING A SNIPPET INTO THE PROJECT? IF THEY ARE INTERESTED IN FINDING OUT MORE, MAYBE THERE COULD BE A LINK TO TAKE THEM TO THAT PROJECT'S PAGE. THIS ALSO APPLIES TO THE SPONSOR'S APPLICATION, WHICH PROVIDES A SIMILAR SITUATION -->
-							<select name="projects" size="5" multiple>
-								<option>project name</option>
-								<option>project name</option>
-								<option>project name</option>
-								<option>project name</option>
-								<option>project name</option>
-								<option>project name</option>
-								<option>project name</option>
-								<option>project name</option>
-							</select>
 						</fieldset>
 					</form>
 				</div>
