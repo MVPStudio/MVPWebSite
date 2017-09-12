@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Developer Application</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="form-checkbox.js"></script>
+</head>
+
+<body id="page-wrapper">
+	<header>
+		<a href="index.html"><img src="images/mvp-logo-white.svg" alt="MVP logo white" class="logo"></a>
+
+		<!--  This menu appears at a max of 554px -->
+		<nav id="menu">
+			<div class="dropdown">
+				<button class="dropbtn">MENU</button>
+				<button class="btn-hamburger-js-slideout-toggle"></button> 
+				<div class="dropdown-content">
+					<ul>
+						<li><a href="index.html">HOME</a></li>
+						<li><a href="us.html">WHO WE ARE</a></li>
+						<li><a href="how.html">HOW IT WORKS</a></li>
+						<li><a href="showcase.html">SHOWCASE</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<div id="page-content">
+		<nav class="top-nav">
+			<ul class="top-nav-normal-menu">
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="us.html">WHO WE ARE</a></li>
+				<li><a href="how.html">HOW IT WORKS</a></li>
+				<li><a href="showcase.html">SHOWCASE</a></li>
+			</ul>
+		</nav>
+
+		<section>
+			<h1>DEVELOPER ONBOARDING</h1>
+
+			<div class="content">
+				<div class="text-participating">
+					<p>MVP Studio is all about connecting people with tech ideas with people who can help make those ideas a reality. Teamwork is where all the action is, so we desire to be a means of connections and provisions. As a developer coming onboard, you will be a major go-to for being able to assist interns and help take projects to the those crucial next levels! We look forward to welcoming you aboard and working with you to build awesome projects!</p>
+				</div>
+
+				<ul class="icons-participating"> <!-- LOOK FOR NOTES IN THE INTER APPLICATION FORM -->
+					<li>
+						<a href="thanks.html"><img src="images/send.svg" alt="send"></a>
+					</li>
+				</ul>
+
+				<div class="developer-form"> 
+					<form action="/form-api/v/1/t/developer" method="post" id="form">
+						<fieldset>
+							<ul>
+								<li><label for="name">name<br> 
+									<input type="text" name="name" id="name" maxlength="100" required></label>
+								</li>
+								<li><label for="email">email<br>
+									<input type="email" name="email" id="email" maxlength="100" required></label>
+								</li>
+							</ul>
+						</fieldset>
+
+						<fieldset>
+							<ul>	
+								<li>your skill sets<br>
+									<ul>
+										<li class="choice"><label><input type="checkbox" name="skill" value="designer">designer</label></li>
+										<li class="choice"><label><input type="checkbox" name="skill" value="developer">developer</label>
+											<ul class="sub-choices">
+												<li><label><input type="checkbox" name="skillDeveloper" value="front end">front end</label></li>
+												<li><label><input type="checkbox" name="skillDeveloper" value="back end">back end</label></li>
+												<li><label><input type="checkbox" name="skillDeveloper" value="webs">webs</label></li>
+												<li><label><input type="checkbox" name="skillDeveloper" value="apps">apps</label></li>
+											</ul>
+										</li>
+										<li class="choice"><label><input type="checkbox" name="skill" value="agile pm">agile pm</label></li>
+									</ul>
+								</li>
+							</ul>
+
+							<p>i can dedicate  
+								<select name="time-dedication" form="form">
+									<option>5-10</option>
+									<option>10-15</option>
+									<option>15-20</option>
+									<option>20-25</option>
+									<option>25-30</option>
+									<option>30-35</option> 
+									<option>35-40</option>
+								</select> 
+								hour/hours per week between these days
+							</p>
+							
+							<ul id="availability">
+								<li><input type="checkbox" name="day" value="S">S</li>
+								<li><input type="checkbox" name="day" value="M">M</li>
+								<li><input type="checkbox" name="day" value="Tu">Tu</li>
+								<li><input type="checkbox" name="day" value="W">W</li>
+								<li><input type="checkbox" name="day" value="Th">Th</li>
+								<li><input type="checkbox" name="day" value="F">F</li>
+								<li><input type="checkbox" name="day" value="S">S</li>
+							</ul>
+						</fieldset>
+						<input type="submit" value="submit">
+					</form>
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<div class="copyright">
+				<p>&copy; 2017 MVP STUDIO.</p> 
+				<p>ALL RIGHTS RESERVED.</p>
+			</div>
+
+			<ul class="terms-privacy">
+				<li>
+					<a href="terms.html">TERMS OF USE</a>
+				</li><li>
+					<a href="privacy.html">PRIVACY POLICY</a>
+				</li>
+			</ul>
+		</footer>
+	</div>
+</body>
+</html>
