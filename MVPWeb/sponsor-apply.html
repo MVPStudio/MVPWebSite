@@ -45,11 +45,11 @@
 
 			<div class="content">
 				<div class="text-participating">
-					<p>MVP Studio is all about connecting people with tech ideas with people who can help make those ideas a reality. Teamwork is where all the action is, so we desire to be a means of connections and provisions. As a sponsor, you are an integral part of bringing interns, developers, and clients together. We are not-for-profit, so your support is very appreciative.</p>
+					<p>MVP Studio is all about connecting people with tech ideas with people who can help make those ideas a reality&#46; Teamwork is where all the action is&#44; so we desire to be a means of connections and provisions&#46; As a sponsor&#44; you are an integral part of bringing interns&#44; developers&#44; and clients together&#46; We are not&ndash;for&ndash;profit&#44; so your support is very appreciative&#46;</p>
 				</div>
 
 				<div class="sponsor-form">
-					<form action="/form-api/v/1/t/client" method="post">
+					<form action="/form-api/v/1/t/sponsor" method="post" id="form">
 						<fieldset>
 							<ul>
 								<li><label for="name">name<br> <!-- NOTE: THIS IS THE SAME SECTION AS THE INTERN FORM -->
@@ -63,37 +63,19 @@
 
 						<fieldset>	
 							<ul>	
-								<li>type of organization<br> <!-- DOES THIS RELATE TO THE TYPE OF ORGANIZATION THE SPONSOR WORKS WITH OR IS INTERESTED IN SPONSORING? OR FAVORS SPONSORING? -->
+								<li>type of organization<br>
 									<ul>
 										<li><input type="radio" name="organization" value="private">private</li>
 										<li><input type="radio" name="organization" value="public">public</li>
 										<li><input type="radio" name="organization" value="501c3">501c3</li>
 									</ul>
 								</li>
-								<li>types of projects you would like to sponsor<br> 
-									<textarea name="project-type" id="form-project-type-sponsor" placeholder="please list projects, separated by a comma" rows="3" cols="30"></textarea>
-								</li>
-								<li>here is a list of projects we have on the table. If you are interested in supporting any of them, please click the ones you would like to see developed further</li> <!-- THIS AND THE FOLLOWING LIST ITEM PRESENT SIMILAR ISSUES: WOULD IT BE OKAY IF IT WORKED WITH THE DEVELOPER'S APPLICATION TO BRING THE SAME CONCEPT IN HERE? A WAY TO SHOW A PREVIEW OF THE PROJECT, A LINK TO JUMP TO THAT PROJECT FOR MORE INFORMATION? -->
 							</ul>
-						</fieldset>
-
-						<fieldset>
-							<p>interest in projects?</p> <!-- PLEASE REFER TO TOP NOTE AND THE NOTE IN THE DEVELOPER APPLICATION -->
-							<select name="projects" size="5" multiple>
-								<option>project name</option>
-								<option>project name</option>
-								<option>project name</option>
-								<option>project name</option>
-								<option>project name</option>
-								<option>project name</option>
-								<option>project name</option>
-								<option>project name</option>
-							</select>
 						</fieldset>
 					</form>
 				</div>
-				
-				<ul class="icons-participating"> <!-- NOTE: THIS IS THE SAME SECTION AS THE INTERN FORM -->
+
+				<ul class="icons-participating"> 
 					<li>
 						<a href="thanks.html"><img src="images/send.svg" alt="send"></a>
 					</li>
@@ -103,8 +85,8 @@
 
 		<footer>
 			<div class="copyright">
-				<p>&copy; 2017 MVP STUDIO.</p> 
-				<p>ALL RIGHTS RESERVED.</p>
+				<p>&copy; 2017 MVP STUDIO&#46;</p> 
+				<p>ALL RIGHTS RESERVED&#46;</p>
 			</div>
 
 			<ul class="terms-privacy">
