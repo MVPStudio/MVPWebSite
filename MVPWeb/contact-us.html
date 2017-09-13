@@ -5,7 +5,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>MVP Studio</title>
+	<title>Contact Us</title>
 	<link rel="stylesheet" href="style.css">
 </head>
 
@@ -41,22 +41,34 @@
 		</nav>
 
 		<section>
-			<h1>WORK WITH MVP STUDIO</h1>
+			<h1>CONTACT US</h1>
 
 			<div class="content">
 				<div class="text">
-					<p>Are you ready to grow your business or organization? We are a collaborative and fun group of web professionals who strive to provide cost&ndash;effective design solutions that support your organization&#39;s mission and suits your exact needs&#46; Working with small businesses&#44; startups and community&ndash;oriented organizations are our specialty&#46;</p>
+					<p>We are here to help bring people together to make projects possible! If something is causing you to question anything about joining in this awesome feat, please let us know. We want to help! The only request we ask of you specifially is to address the area you are wondering about. Then be on the lookout for our response within 1 to 2 business days.</p>
 				</div>
 
-				<ul class="icons">
+				<div class="comment-form">
+					<form action="/form-api/v/1/t/client" method="post">
+						<fieldset>
+							<ul>
+								<li><label>name<br>
+									<input type="text" name="name" id="form-name" maxlength="100" required></label></li>
+								<li><label>email<br>
+									<input type="email" name="email" id="form-email" maxlength="100" required></label></li>
+							</ul>
+						</fieldset>
+
+						<fieldset>	
+							<p>comment<br>
+								<textarea name="comment" id="form-comment" rows="3" cols="30"></textarea>
+							</p>
+					</form>
+				</div>
+
+				<ul class="icons-participating"> <!-- NOTE: THIS IS THE SAME SECTION AS THE INTERN FORM -->
 					<li>
-						<a href="intern.html"><img src="images/interns.svg" alt="interns"></a>
-					</li><li>
-						<a href="developers.html"><img src="images/developers.svg" alt="developers"></a>
-					</li><li>
-						<a href="sponsors.html"><img src="images/sponsors.svg" alt="sponsors"></a>
-					</li><li>
-						<a href="clients.html"><img src="images/clients.svg" alt="clients"></a>
+						<a href="thanks.html"><img src="images/send.svg" alt="send"></a>
 					</li>
 				</ul>
 			</div>
@@ -64,8 +76,8 @@
 
 		<footer>
 			<div class="copyright">
-				<p>&copy; 2017 MVP STUDIO&#46;</p> 
-				<p>ALL RIGHTS RESERVED&#46;</p>
+				<p>&copy; 2017 MVP STUDIO.</p> 
+				<p>ALL RIGHTS RESERVED.</p>
 			</div>
 
 			<ul class="terms-privacy">

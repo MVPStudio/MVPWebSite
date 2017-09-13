@@ -48,17 +48,11 @@
 					<p>MVP Studio is all about connecting people with tech ideas with people who can help make those ideas a reality. Teamwork is where all the action is, so we desire to be a means of connections and provisions. As an intern, you will work with the pros to develop your understanding of how tech works. You will also be called upon to provide your thoughts and insights as we work together to make projects a reality.</p>
 				</div>
 
-				<ul class="icons-participating"> <!-- THIS IS THE SAME FOR EACH PAGE. DOES THIS HAVE TO BE GENERATED THROUGH A JAVASCRIPT FUNCTION TO SUCCESSFULLY REPORT THAT THE APPLICATION WAS SUBMITTED CORRECTLY? HOW WILL THAT CONNECT TO THE LINK? CAN I CONNECT THE SUBMIT FUNCTIONALITY TO THE IMAGE? -->
-					<li>
-						<a href="thanks.html"><img src="images/send.svg" alt="send"></a>
-					</li>
-				</ul>
-
-				<div class="intern-form"> <!-- WAITING FOR THE ACTION FILE -->
-					<form action="" method="post">
+				<div class="intern-form">
+					<form action="/form-api/v/1/t/client" method="post">
 						<fieldset>
 							<ul>
-								<li><label for="name">name<br> <!-- IS THERE ANY SPECIAL ID NEEDED FOR EACH TYPE OF APPLICATION TO DIFFERENTIATE BETWEEN THEM? -->
+								<li><label for="name">name<br> 
 									<input type="text" name="name" id="name" maxlength="100" required></label>
 								</li>
 								<li><label for="email">email<br>
@@ -147,6 +141,12 @@
 						</fieldset>
 					</form>
 				</div>
+				
+				<ul class="icons-participating"> <!-- THIS IS THE SAME FOR EACH PAGE. DOES THIS HAVE TO BE GENERATED THROUGH A JAVASCRIPT FUNCTION TO SUCCESSFULLY REPORT THAT THE APPLICATION WAS SUBMITTED CORRECTLY? HOW WILL THAT CONNECT TO THE LINK? CAN I CONNECT THE SUBMIT FUNCTIONALITY TO THE IMAGE? -->
+					<li>
+						<a href="thanks.html"><img src="images/send.svg" alt="send"></a>
+					</li>
+				</ul>
 			</div>
 		</section>
 
