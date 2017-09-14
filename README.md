@@ -2,14 +2,14 @@
 The web site for MVP Studio. 
 
 ## Info
-Currently, MVP Studio is statically hosted using a node web service and is split into two parts, [MVPWeb](MVPWeb), and [MVPNode](MVPNode).
+Currently, MVP Studio is statically hosted using a node web service and is split into two parts, [MVPWeb](MVPWeb), and [MVPNode](MVPNode/MVPNode).
 
 The [MVPWeb](MVPWeb) directory contains the statically hosted html. The Node server points to this directory for static hosting - therefor all files in this directory are accessable externally.
 
-The [MVPNode](MVPNode) directory contains the Node server files that connect to the database and host the html from [MVPWeb](MVPWeb).
+The [MVPNode](MVPNode/MVPNode) directory contains the Node server files that connect to the database and host the html from [MVPWeb](MVPWeb).
 
 ## Running the Node server
-To run the server, use the `npm start` command from the [MVPNode/MVPNode](MVPNode/MVPNode) directory. The default port is 3000.
+To run the server, use the `npm start` command from the [MVPNode](MVPNode/MVPNode) directory. The default port is 3000.
 
 Unit tests for the server are written in Mocha, and can be run by using the command `npm test`
 
