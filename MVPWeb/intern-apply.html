@@ -7,6 +7,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Intern Application</title>
 	<link rel="stylesheet" href="style.css">
+	<!-- UNDERSTANDING THE CHARSETS: 
+		"&#ndash;" = "-", 
+		"&#33;" = "!", 
+		"&#36;" = "$", 
+		"&#39" = "'", 
+		"&#40;" = "(", 
+		"&#41;" = ")", 
+		"&#44;" = ",", 
+		"&#46;" = "." 
+	-->		
 </head>
 
 <body id="page-wrapper">
@@ -27,7 +37,7 @@
 					</ul>
 				</div>
 			</div>
-		</nav>
+		</nav>		
 	</header>
 
 	<div id="page-content">
@@ -74,7 +84,7 @@
 							<p>please let us know which term and year you are planning on completing your internship</p>
 
 							<p>term<br> <!-- SHOULD THIS BE A SELECT ONE ONLY OR MULITPLE TERMS? -->
-								<select>
+								<select id="form">
 									<option>fall</option>
 									<option>winter</option>
 									<option>spring</option>
@@ -94,14 +104,13 @@
 									<ul>
 										<li><input type="checkbox" name="skill" value="designer">designer</li>
 										<li><input type="checkbox" name="skill" value="developer">developer</li>
-										<!-- THIS TIES INTO NOTE BELOW. I AM LOOKING INTO IMPLEMENTING JAVASCRIPT TO GET THE LIST WORK PROPERLY-->
 										<li><input type="checkbox" name="skill-category" value="agile pm">agile pm</li>
 									</ul>
 								</li>
 							</ul>
 
 							<p>i can dedicate 
-								<select>
+								<select id="form">
 									<option>5&ndash;10</option>
 									<option>10&ndash;15</option>
 									<option>15&ndash;20</option>

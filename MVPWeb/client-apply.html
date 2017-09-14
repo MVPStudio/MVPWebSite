@@ -7,6 +7,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Client Application</title>
 	<link rel="stylesheet" href="style.css">
+	<!-- UNDERSTANDING THE CHARSETS: 
+		"&#ndash;" = "-", 
+		"&#33;" = "!", 
+		"&#36;" = "$", 
+		"&#39" = "'", 
+		"&#40;" = "(", 
+		"&#41;" = ")", 
+		"&#44;" = ",", 
+		"&#46;" = "." 
+	-->	
 </head>
 
 <body id="page-wrapper">
@@ -27,7 +37,7 @@
 					</ul>
 				</div>
 			</div>
-		</nav>
+		</nav>		
 	</header>
 
 	<div id="page-content">
@@ -45,7 +55,7 @@
 
 			<div class="content">
 				<div class="text-participating">
-					<p>MVP Studio is all about connecting people with tech ideas with people who can help make those ideas a reality. Teamwork is where all the action is so we desire to be a means of connections and provisions. Interns work with developers in the tech field to learn coding and software development. Our developers are experienced and up&ndash;to&ndash;date with the technology trends, therefore they would provide key insights into your ideas to start making awesome things happen.</p>
+					<p>MVP Studio is all about connecting people with tech ideas with people who can help make those ideas a reality&#46; Teamwork is where all the action is so we desire to be a means of connections and provisions&#46; Interns work with developers in the tech field to learn coding and software development&#46; Our developers are experienced and up&ndash;to&ndash;date with the technology trends&#44; therefore they would provide key insights into your ideas to start making awesome things happen&#46;</p>
 				</div>
 
 				<div class="client-form">
@@ -65,10 +75,10 @@
 							</p>
 							
 							<p>project type<br>
-								<select>
-										<option>website</option>
-										<option>software development</option>
-										<option>app</option>
+								<select id="form">
+									<option>website</option>
+									<option>software development</option>
+									<option>app</option>
 								</select>
 							</p>
 
@@ -77,30 +87,30 @@
 							</p>
 
 							<p id="form-budget">project budget<br>
-								$
+								&#36; <!-- THIS IS THE DOLLAR SIGN -->
 								<input type="text" name="budget" class="form-budget-client" maxlength="8"> 
-								and $
+								and &#36;
 								<input type="text" name="budget" class="form-budget-client" maxlength="8">
 							</p>
 
 							<p>i can dedicate
-									<select>
-										<option>5-10</option>
-										<option>10-15</option>
-										<option>15-20</option>
-										<option>20-25</option>
-										<option>25-30</option>
-										<option>30-35</option> 
-										<option>35-40</option>
+									<select id="form">
+										<option>5&ndash;10</option>
+										<option>10&ndash;15</option>
+										<option>15&ndash;20</option>
+										<option>20&ndash;25</option>
+										<option>25&ndash;30</option>
+										<option>30&ndash;35</option> 
+										<option>35&ndash;40</option>
 									</select> 
 								hour/hours per week
 							</P>
 
-							<p>if you have website, we would love to see it!<br> 
+							<p>if you have website, we would love to see it&#33;<br> 
 								<input type="url" name="website-link" id="form-website-client">
 							</p>
 
-							<p>if you have a demo, please show us!<br> 
+							<p>if you have a demo, please show us&#33;<br> 
 								<input type="url" name="demo-link" id="form-demo-client">
 							</p>
 						</fieldset>
@@ -139,8 +149,8 @@
 
 		<footer>
 			<div class="copyright">
-				<p>&copy; 2017 MVP STUDIO.</p> 
-				<p>ALL RIGHTS RESERVED.</p>
+				<p>&copy; 2017 MVP STUDIO&#46;</p> 
+				<p>ALL RIGHTS RESERVED&#46;</p>
 			</div>
 
 			<ul class="terms-privacy">
