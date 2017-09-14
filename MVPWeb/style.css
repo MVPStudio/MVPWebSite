@@ -429,6 +429,32 @@ section {
 }
 
 
+/*******       FORM STYLES      *******/
+.icons-submit {
+	position: relative;
+	text-align: center;
+	width: 100%;
+	margin: 50px auto 30px;
+}
+
+input[type="submit"], 
+[type="reset"] {
+	background-color: transparent;
+	border: none;
+
+	font-family: 'Lulo Clean One', sans-serif;
+	font-weight: normal;
+	font-size: 0.75em;
+	color: #fff;
+	padding: 0 2.5% 0;
+
+	cursor: pointer;
+}
+
+.submit:hover {
+	color:#e85a36;
+}
+
 /*******       FOOTER STYLES      *******/
 footer {
 	position: fixed;

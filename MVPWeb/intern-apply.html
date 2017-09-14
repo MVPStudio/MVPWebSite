@@ -84,7 +84,7 @@
 							<p>please let us know which term and year you are planning on completing your internship</p>
 
 							<p>term<br> <!-- SHOULD THIS BE A SELECT ONE ONLY OR MULITPLE TERMS? -->
-								<select id="form">
+								<select form="form">
 									<option>fall</option>
 									<option>winter</option>
 									<option>spring</option>
@@ -93,7 +93,7 @@
 							</p>
 
 							<p>year<br>
-								<input type="number" name="year" id="formYear" placeholder="yyyy" maxlength="4">
+								<input type="number" name="year" id="formYear" placeholder="yyyy">
 							</p>
 						</fieldset>
 
@@ -110,7 +110,7 @@
 							</ul>
 
 							<p>i can dedicate 
-								<select id="form">
+								<select form="form">
 									<option>5&ndash;10</option>
 									<option>10&ndash;15</option>
 									<option>15&ndash;20</option>
@@ -134,7 +134,7 @@
 						</fieldset>
 
 						<fieldset>
-							<p>looking for a Capstone project?</p>
+							<p>looking for a capstone project?</p>
 							<ul>
 								<li><input type="radio" name="capstone" value="yes">yes&#33;</li>
 								<li><input type="radio" name="capstone" value="no">no&#44; thank you&#33;</li>
@@ -143,11 +143,10 @@
 					</form>
 				</div>
 
-				<ul class="icons-participating">
-					<li>
-						<a href="thanks.html"><img src="images/send.svg" alt="send"></a>
-					</li>
-				</ul>
+				<p class="icons-submit">
+					<input class="submit" type="submit" value="let's do this!" />
+					<input class="submit" type="reset" value="changed my mind" />
+				</p>
 			</div>
 		</section>
 
