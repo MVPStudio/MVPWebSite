@@ -37,9 +37,9 @@ The `:table` parameter represents the *exact* name of the table that data will b
 ```
 The actual data to be added to the table should be in the body of the request, stored as JSON with the following form:
 ```JSON
-{ key1: 'value1',
-  key2: 'value2',
-  key3: 'value3' }
+{ "key1": "value1",
+  "key2": "value2",
+  "key3": "value3" }
 ```
 The keys all represent the *exact* column names for the table being accessed, and the values represent the data that will be put into that column
 
