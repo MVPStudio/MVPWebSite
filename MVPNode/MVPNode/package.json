@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "npm run copy && node ./bin/www",
+    "start": "node ./bin/www",
     "test": "mocha",
     "copy": "node copy.js"
   },

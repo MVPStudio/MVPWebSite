@@ -16,7 +16,7 @@ describe('dbConnect', function () {
                 }
                 var testTable = "testing"
 
-                assert.equal("INSERT INTO testing (test1, test2, test3, test4) VALUES ('test1', 'test2', 'test3a,test3b', 'test4');",
+                assert.equal("INSERT INTO testing ([test1], [test2], [test3], [test4]) VALUES ('test1', 'test2', 'test3a,test3b', 'test4');",
                               mssqlConnect.insertDictionary(testTable, testDictionary));
             });
         })

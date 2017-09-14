@@ -13,7 +13,7 @@ var FormApi = function () {}
 FormApi.prototype.saveForm = function (req, res) {
     
     const httpResponse = res;
-
+    //console.log(req.body);
     // Try to make a request using the infromation provided
     // TODO: Make a better user feedback mechanism
     mssql.insertDictionary(req.params.table, req.body, function(res, err) {
