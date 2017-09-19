@@ -1,0 +1,10 @@
+{
+    "user": "MvpStudioPublic",
+    "password": "g$2r3Uy+*_Hw2qreUHyaG=tzXUxhqhb5nH!!Mf^n%XeqkW5WkjvZ2Apd9q+77z&thpUk_y?ft9HvqbEcj_f_VD*!6Z_Gz*G4B^E^_Mk&*_*8$JV8fX4zgN*WYEQsHSLv",
+    "server": "mvpstudio.database.windows.net",
+    "database": "MvpStudio",
+
+    "options": {
+        "encrypt": true
+    }
+}
