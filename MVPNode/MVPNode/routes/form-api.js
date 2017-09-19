@@ -17,7 +17,13 @@ router.post('/v/:version/t/:table', function (req, res, next) {
     
     switch (req.params.version) {
         case "1":
-            // Simply save the form, the saveForm function takes care of responding
+            // First check for the special `table` endpoint: "contact"
+            if (req.params.table === "contact") {
+                formApiV1.sendMail(req, res);
+                break;
+            }
+
+            // Otherwise, simply save the form, the saveForm function takes care of responding
             formApiV1.saveForm(req, res);
         break;
         default:
