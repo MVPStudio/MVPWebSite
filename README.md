@@ -43,6 +43,15 @@ The actual data to be added to the table should be in the body of the request, s
 ```
 The keys all represent the *exact* column names for the table being accessed, and the values represent the data that will be put into that column
 
+There is a special "table" endpoint available named `contact`. If the _exact_ string `contact` is used for the table name - a test email will be generate to facilitate development of the user contact system. No actual email will be sent, instead an [ethereal.email](https://ethereal.email/) test email will be generated and shared with the user
+
+When using the `contact` endpoint, the body of the POST should contain the following:
+```JSON
+{ "name": "<name of the contacter>",
+  "email": "<email of the contacter>",
+  "comment": "<Comments from the contacter - aka: the email body>"}
+```
+
 Note that it is *not* required that all values are convert to a string format before being sent to the API, the Node server will automatically convert all stored JSON data into strings.
 
 This API is specifically designed to work with HTML forms. In order to have an HTML form work with this API, simply name all the form fields appropriately, and apply the appropriate `action` attribute
