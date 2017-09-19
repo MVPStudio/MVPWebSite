@@ -11,9 +11,9 @@ mssql.on("error", function(err) {
 // Get the configuration file, and give a nice error if it can't be found
 var config;
 try {
-    config = require('../sql_config/sql_config.js');
+    config = require('../config/sql_config');
 } catch (e) {
-    console.error("ERROR: The sql_config.js file could not be found! This file is required to connect to the database, however " +
+    console.error("ERROR: The sql_config file could not be found! This file is required to connect to the database, however " +
                   "it is NOT provided in the repository and must be added to the correct folder manually");
 
     throw(e);

@@ -43,4 +43,4 @@ jspm_packages
 MVPNode/MVPNode/public
 
 # Local Configuration files for SQL access
-MVPNode/MVPNode/sql_config/sql_config.js
+MVPNode/MVPNode/config/sql_config.json

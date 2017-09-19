@@ -13,7 +13,7 @@ To run the server, use the `npm start` command from the [MVPNode](MVPNode/MVPNod
 
 Unit tests for the server are written in Mocha, and can be run by using the command `npm test`
 
-**NOTE:** In order to connect with the SQL server hosting user data, a `sql_config.js` file must be manually added to the [MVPNode/MVPNode/sql_config](MVPNode/MVPNode/sql_config) directory. This file contains credentials for the SQL server, and thus, is not included in the public repository.
+**NOTE:** In order to connect with the SQL server hosting user data, a `sql_config.json` file must be manually added to the [MVPNode/MVPNode/config](MVPNode/MVPNode/config) directory. This file contains credentials for the SQL server, and thus, is not included in the public repository.
 
 ## General Server API Guidelines
 The Node server uses a simple REST API to accept form data.
